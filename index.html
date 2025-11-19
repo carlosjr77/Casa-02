@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condomínio Blue Lake Luxury - ZAPI SOLUÇÕES</title>
+    <title>Condomínio Blue Lake Luxury - EngeTec & ZAPI Soluções</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
         /* Variáveis de Cores (LUXO E PRAIA) */
@@ -13,8 +14,6 @@
             --text-dark: #3A3A3A; /* Cinza Grafite Escuro */
             --bg-light: #FAF7F3; /* Branco Creme (Fundo Suave) */
             --highlight-bg: #F0F5F9; /* Fundo Cinza Azulado Suave */
-            --price-color: #A30000; /* Vermelho Vinho Sóbrio para Preço */
-            --success-color: #00A896; /* Verde-Água Calmo (Natureza e Tranquilidade) */
             --whatsapp-color: #25D366; 
             --box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra mais discreta */
         }
@@ -22,103 +21,70 @@
         /* Estilos Base */
         body {
             font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
-            line-height: 1.5; /* Reduzido para 1.5 */
+            line-height: 1.5;
             margin: 0;
             padding: 0;
             background-color: var(--bg-light);
             color: var(--text-dark);
             -webkit-font-smoothing: antialiased;
-            font-size: 14px; /* Fonte base reduzida */
+            font-size: 14px;
         }
         .container {
-            width: 95%; /* Maior largura no desktop para reduzir a altura */
-            max-width: 1000px; /* Largura máxima reduzida */
+            width: 95%;
+            max-width: 1000px;
             margin: auto;
-            padding: 15px 0; /* Padding vertical drasticamente reduzido */
+            padding: 15px 0;
         }
 
         /* Header e Título */
         .header-main {
             background: var(--primary-color);
             color: white;
-            padding: 1.5em 0; /* Padding reduzido */
+            padding: 1.5em 0;
             text-align: center;
-            border-bottom: 3px solid var(--secondary-color); /* Borda mais fina */
-            letter-spacing: 1px; /* Espaçamento de letra reduzido */
+            border-bottom: 3px solid var(--secondary-color);
+            letter-spacing: 1px;
         }
         .header-main h1 {
             margin: 0;
-            font-size: 1.8em; /* Drasticamente reduzido */
+            font-size: 1.8em;
             font-weight: 700;
         }
         .header-main p {
             margin-top: 5px;
-            font-size: 1em; /* Reduzido */
+            font-size: 1em;
             font-style: italic;
             opacity: 0.8;
         }
+        .brand-info {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+            font-weight: 600;
+        }
         
-        /* Tabela Responsiva */
-        .table-responsive {
-            overflow-x: auto; 
-            margin: 15px 0; /* Margem reduzida */
-        }
-
         /* Tabela de Comparação */
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            background: white;
-            box-shadow: var(--box-shadow);
-            border-radius: 6px; /* Arredondamento reduzido */
-            overflow: hidden;
-        }
-        .comparison-table th, .comparison-table td {
-            padding: 10px; /* Padding drasticamente reduzido */
-            text-align: center;
-            border-bottom: 1px solid #eee;
-            border-right: 1px solid #eee;
-            font-size: 0.9em; /* Fonte reduzida */
-        }
-        .comparison-table th {
-            background-color: var(--primary-color);
-            color: white;
-            font-size: 0.95em;
-            vertical-align: middle;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        .comparison-table td {
-            font-weight: 500;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .comparison-table td:last-child {
-            border-right: none;
-        }
-        .comparison-table tr:nth-child(even) {
-            background-color: var(--highlight-bg);
-        }
-        .comparison-table .price-cell {
-            color: var(--secondary-color); /* Cor destacada para valores na tabela */
-            font-size: 1.1em; /* Reduzido */
+        .table-responsive { overflow-x: auto; margin: 15px 0; }
+        .comparison-table { width: 100%; border-radius: 6px; box-shadow: var(--box-shadow); }
+        .comparison-table th, .comparison-table td { padding: 10px; font-size: 0.9em; }
+        .comparison-table th { background-color: var(--primary-color); color: white; font-size: 0.95em; }
+        .comparison-table .price-cell { 
+            color: var(--secondary-color); 
+            font-size: 1.1em; 
             font-weight: 700;
         }
         .comparison-table .cta-cell a {
             background-color: var(--secondary-color);
             color: var(--primary-color);
-            padding: 6px 12px; /* Padding reduzido */
-            text-decoration: none;
+            padding: 6px 12px;
+            font-size: 0.85em;
             border-radius: 50px;
-            font-size: 0.85em; /* Reduzido */
+            text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s;
         }
         .comparison-table .cta-cell a:hover {
             background-color: #b38600;
-            transform: translateY(-1px);
         }
         .comparison-table .highlight-row td {
             background-color: #FFECC4; 
@@ -127,8 +93,8 @@
 
         /* Seções e Estilos de Detalhes */
         .content-section {
-            padding: 20px; /* Padding drasticamente reduzido */
-            margin-bottom: 20px; /* Margem reduzida */
+            padding: 20px;
+            margin-bottom: 20px;
             background: white;
             border-radius: 6px; 
             box-shadow: var(--box-shadow);
@@ -142,254 +108,185 @@
             color: var(--primary-color);
             border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 8px;
-            margin-bottom: 20px; /* Margem reduzida */
-            font-size: 1.6em; /* Drasticamente reduzido */
+            margin-bottom: 20px;
+            font-size: 1.6em;
             font-weight: 600;
-        }
-        .highlight-box {
-            background-color: var(--highlight-bg);
-            padding: 20px; /* Padding reduzido */
-            border-left: 4px solid var(--secondary-color);
-            margin: 30px 0; /* Margem reduzida */
-            border-radius: 6px;
         }
         .image-placeholder {
             text-align: center;
-            margin: 15px 0; /* Margem reduzida */
+            margin: 15px 0;
             padding: 10px;
             background-color: #eee;
             border-radius: 6px;
         }
-        .image-placeholder img.plan-image { /* Adicionado seletor para imagens de planta */
-            max-width: 60%; /* Imagem menor para desktop */
-            width: auto; /* Garante ajuste */
+        .image-placeholder img.plan-image {
+            max-width: 60%; 
+            width: auto;
             height: auto;
             border-radius: 4px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
-        .details-list, .included-list {
-            list-style: none;
-            padding: 0;
-        }
+        .details-list, .included-list { list-style: none; padding: 0; }
         .details-list li, .included-list li {
-            padding: 8px 0; /* Padding drasticamente reduzido */
+            padding: 8px 0;
             border-bottom: 1px solid #f0f0f0;
             display: flex;
             align-items: flex-start;
-            font-size: 0.95em; /* Reduzido */
-        }
-        .details-list li:last-child, .included-list li:last-child {
-            border-bottom: none;
+            font-size: 0.95em;
         }
         .details-list li::before, .included-list li::before {
             content: '✓'; 
             margin-right: 10px;
             color: var(--success-color);
-            font-size: 1.1em;
             font-weight: 900;
         }
-        .pdf-links {
-            margin-top: 25px;
-            padding-top: 15px; 
-            border-top: 1px solid #ccc;
-        }
-        .pdf-links h3 {
-            color: var(--primary-color);
-            font-size: 1.4em; /* Reduzido */
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        .pdf-links .pdf-item {
-            font-weight: 500; 
-            padding: 8px 0; /* Padding reduzido */
-            font-size: 0.95em;
-        }
-        .pdf-icon {
-            font-size: 1.3em;
-            margin-right: 10px;
-        }
+        
+        /* Preço Box */
         .price-box {
             background: var(--secondary-color);
-            padding: 25px; /* Padding reduzido */
+            padding: 25px;
             text-align: center;
             border-radius: 10px;
-            margin: 30px 0; /* Margem reduzida */
+            margin: 30px 0;
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
             border: 2px solid var(--primary-color);
         }
-        .price-box h3 {
-            color: var(--primary-color);
-            margin-top: 0;
-            font-size: 1.3em; /* Reduzido */
-            text-transform: uppercase;
-        }
+        .price-box h3 { color: var(--primary-color); font-size: 1.3em; }
         .price-box .price {
             font-family: 'Georgia', serif; 
-            font-size: 2.5em; /* REDUÇÃO MÁXIMA para o preço */
-            color: var(--primary-color); /* Mudei para primary-color para contraste forte com o dourado */
+            font-size: 2.5em; 
+            color: var(--primary-color); 
             font-weight: 900;
             margin: 5px 0; 
             line-height: 1.2;
         }
         .price-box .traditional-price {
-            color: var(--primary-color); /* Ajustado para primário para manter a paleta */
-            font-weight: bold;
+            color: var(--primary-color);
             text-decoration: line-through;
         }
-        .offer-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
         .offer-list li {
-            margin-bottom: 10px;
-            font-weight: 500;
-            padding: 12px; /* Padding reduzido */
             background: #ffffff;
-            border-radius: 6px;
             border-left: 4px solid var(--secondary-color); 
-            line-height: 1.4;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-            font-size: 0.95em; /* Reduzido */
+            font-size: 0.95em;
         }
-        .offer-list li::before {
-            content: '⭐';
-            margin-right: 10px;
-            font-size: 1em;
-        }
+
+        /* Contato Rodapé */
         .contact-footer {
             text-align: center;
-            padding: 30px 0; /* Padding reduzido */
+            padding: 30px 0;
             background: var(--primary-color);
             color: white;
             border-radius: 0 0 8px 8px;
-            margin-top: 30px; /* Margem reduzida */
+            margin-top: 30px;
         }
         .contact-footer h2 {
             color: white;
-            border-bottom: none;
             margin-bottom: 25px;
-            font-size: 1.6em; /* Reduzido */
+            font-size: 1.6em;
         }
         .contact-footer a {
-            display: inline-block;
             background-color: var(--whatsapp-color);
             color: white;
-            padding: 12px 30px; /* Padding reduzido */
-            margin-top: 20px;
+            padding: 12px 30px;
             border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em; /* Reduzido */
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.25);
-            text-transform: uppercase;
-        }
-        .contact-footer a:hover {
-            background-color: #128C7E;
-            transform: translateY(-2px);
+            font-size: 1.2em;
         }
 
-        /* Estilos da Assistente Virtual Flutuante */
-        .assistant-container {
+        /* FLUTUANTES */
+        .fixed-icons-container {
             position: fixed;
-            bottom: 18px;
-            right: 18px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            flex-direction: column-reverse;
+            gap: 10px;
         }
-
+        .fixed-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, opacity 0.3s;
+            text-decoration: none;
+        }
+        .fixed-icon:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-icon {
+            background-color: var(--whatsapp-color);
+            color: white;
+            font-size: 1.8em;
+            order: 1;
+        }
+        .assistant-figure {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 2em;
+            order: 2;
+        }
         .assistant-bubble {
             background-color: var(--secondary-color); 
             color: var(--primary-color);
-            padding: 10px 15px; /* Padding reduzido */
+            padding: 10px 15px;
             border-radius: 15px 15px 0 15px;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-            margin-bottom: 10px;
-            max-width: 220px; /* Largura reduzida */
-            font-size: 0.9em; /* Reduzido */
-            line-height: 1.4;
+            max-width: 220px;
+            font-size: 0.9em;
             opacity: 0;
             transform: scale(0.9) translateY(10px);
             transition: opacity 0.5s ease, transform 0.5s ease;
+            position: absolute;
+            right: 65px; 
+            bottom: 55px; 
+            text-align: left;
         }
-
         .assistant-bubble.show {
             opacity: 1;
             transform: scale(1) translateY(0);
         }
 
-        .assistant-figure {
-            width: 50px; /* Tamanho reduzido */
-            height: 50px; /* Tamanho reduzido */
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            cursor: pointer;
-            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+        /* Rodapé de Informações */
+        .info-footer {
+            background-color: #2c2c2c;
+            color: #b0b0b0;
+            padding: 15px 0;
+            font-size: 0.8em;
+            margin-top: 0; /* Junta com o footer principal */
+        }
+        .info-footer .city-data {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em; /* Reduzido */
-            transition: transform 0.3s;
-            text-decoration: none;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            flex-wrap: wrap;
         }
-
-        .assistant-figure:hover {
-            transform: scale(1.05);
+        .info-footer .city-item {
+            padding: 5px 10px;
         }
-
-        /* Estilo para links dentro da lista de inclusos */
-        .included-list a {
-            color: var(--primary-color);
-            text-decoration: underline;
+        .info-footer .time {
             font-weight: bold;
-            transition: color 0.2s;
-        }
-        .included-list a:hover {
-            color: var(--secondary-color);
+            color: white;
+            display: block;
+            font-size: 1.1em;
+            margin-top: 2px;
         }
 
         /* RESPONSIVIDADE (Mobile) */
         @media (max-width: 768px) {
-            body {
-                font-size: 13px;
+            .header-main h1 { font-size: 1.4em; }
+            .info-footer .city-data {
+                flex-direction: column;
+                gap: 10px;
             }
-            .header-main h1 {
-                font-size: 1.4em;
-            }
-            .header-main p {
-                font-size: 0.85em;
-            }
-            .content-section {
-                padding: 15px;
-            }
-            .section-title {
-                font-size: 1.4em;
-                margin-bottom: 15px;
-            }
-            .price-box .price {
-                font-size: 2.2em; /* Garantindo que caiba no mobile */
-            }
-            .comparison-table {
-                min-width: 700px; /* Mantém largura mínima para scroll horizontal */
-            }
-            .image-placeholder img.plan-image {
-                max-width: 90%; /* Aumenta um pouco para ser visível em telas menores */
-            }
-            .assistant-container {
-                bottom: 10px;
-                right: 10px;
-            }
-            .assistant-figure {
-                width: 45px;
-                height: 45px;
-                font-size: 1.8em;
-            }
-            .assistant-bubble {
-                max-width: 180px;
-                font-size: 0.8em;
-            }
+            .image-placeholder img.plan-image { max-width: 90%; }
+            .fixed-icons-container { bottom: 10px; right: 10px; gap: 8px; }
+            .fixed-icon { width: 45px; height: 45px; font-size: 1.6em; }
+            .assistant-bubble { right: 55px; bottom: 45px; max-width: 150px; font-size: 0.75em; }
         }
     </style>
 </head>
@@ -399,6 +296,7 @@
         <div class="container">
             <h1>BLUE LAKE RESIDENCE CLUB</h1>
             <p>Construção Monolítica de Alto Padrão - A Exclusividade Próxima ao Mar</p>
+            <p class="brand-info">Uma obra em parceria exclusiva **EngeTec** e **ZAPI Soluções**</p>
         </div>
     </header>
 
@@ -413,7 +311,8 @@
                         <tr>
                             <th>Planta</th>
                             <th>Quartos</th>
-                            <th>Área Total Construída</th> <th>Investimento (Monolítico)<br>(Entrega em 12 meses)</th>
+                            <th>Área Total Construída</th>
+                            <th>Investimento (Monolítico)<br>(Entrega em 12 meses)</th>
                             <th>Custo Estimado (Convencional)<br>(Entrega em 15 meses)</th>
                             <th>Ver Projeto</th>
                         </tr>
@@ -423,39 +322,38 @@
                             <td><strong>Planta 01</strong></td>
                             <td>5 Quartos, 3 Suítes</td>
                             <td>198 m²</td>
-                            <td class="price-cell">R$ 480.000,00*</td>
-                            <td class="price-cell">R$ 530.000,00*</td> 
+                            <td class="price-cell">R$ 480.000,00</td>
+                            <td class="price-cell">R$ 530.000,00</td> 
                             <td class="cta-cell"><a href="#planta-01">Detalhes</a></td>
                         </tr>
                         <tr class="highlight-row">
                             <td><strong>Planta 02 (Destaque)</strong></td>
-                            
                             <td>4 Quartos, 2 Suítes</td>
                             <td>219,64 m²</td>
-                            <td class="price-cell">R$ 450.000,00*</td>
-                            <td class="price-cell">R$ 510.000,00*</td> 
+                            <td class="price-cell">R$ 450.000,00</td>
+                            <td class="price-cell">R$ 510.000,00</td> 
                             <td class="cta-cell"><a href="#planta-02">Detalhes</a></td>
                         </tr>
                         <tr>
                             <td><strong>Planta 03</strong></td>
                             <td>3 Quartos, 1 Suíte</td>
                             <td>110,99 m²</td>
-                            <td class="price-cell">R$ 390.000,00*</td>
-                            <td class="price-cell">R$ 440.000,00*</td> 
+                            <td class="price-cell">R$ 390.000,00</td>
+                            <td class="price-cell">R$ 440.000,00</td> 
                             <td class="cta-cell"><a href="#planta-03">Detalhes</a></td>
                         </tr>
                         <tr>
                             <td><strong>Planta 04</strong></td>
                             <td>3 Quartos, 3 Suítes</td>
                             <td>189,92 m²</td>
-                            <td class="price-cell">R$ 420.000,00*</td>
-                            <td class="price-cell">R$ 470.000,00*</td>
+                            <td class="price-cell">R$ 420.000,00</td>
+                            <td class="price-cell">R$ 470.000,00</td>
                             <td class="cta-cell"><a href="#planta-04">Detalhes</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: right; font-size: 0.85em; margin-top: 8px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
+            <p style="text-align: right; font-size: 0.85em; margin-top: 8px; font-style: italic;">Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
         </section>
 
         <section class="content-section">
@@ -463,7 +361,8 @@
             <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade. Otimizado para o Sistema Monolítico EngeTec.</p>
 
             <div class="image-placeholder">
-                <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
+                <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" class="plan-image">
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -473,22 +372,6 @@
                 <li><strong>Ambientes de Convívio:</strong> Sala de Estar (27 m²), Sala de Jantar (15 m²), Cozinha Gourmet (11 m²).</li>
             </ul>
         
-            <div class="pdf-links">
-                <h3>📥 Documentação Técnica</h3>
-                <ul class="details-list" style="list-style: none; padding-left: 0;">
-                    <li>
-                        <a href="BLK - CASA 01 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BLK - CASA 01 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">📐</span> Fachada Principal e Cortes Transversais (PDF)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <div class="price-box">
                 <h3>INVESTIMENTO EXCLUSIVO (Planta 01 - Monolítico)</h3>
                 <p class="price">R$ 480.000,00</p>
@@ -504,7 +387,8 @@
             <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo.</p>
 
             <div class="image-placeholder">
-                <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
+                <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" class="plan-image">
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -514,27 +398,10 @@
                 <li><strong>Ambientes Amplos:</strong> Sala de Estar (34,43 m²), Cozinha (17,04 m²), Garagem para 2 carros (32,11 m²).</li>
             </ul>
    
-            <div class="pdf-links">
-                <h3>📥 Documentação Técnica</h3>
-                <ul class="details-list" style="list-style: none; padding-left: 0;">
-                    <li>
-                      <a href="planta-baixa.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="fachadas-cortes.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">📐</span> Fachada Principal e Cortes Transversais (PDF)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
              <div class="price-box">
                 <h3>OFERTA ESPECIAL (Planta 02 - Sistema Monolítico)</h3>
                 <p class="price">R$ 450.000,00</p>
                 <p style="font-size: 1em;">
-                   
                     Economize **R$ 60.000,00** comparado ao Método Tradicional.<br>
                     (Custo do Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, com prazo de até 15 meses para entrega total).
                 </p>
@@ -546,7 +413,8 @@
             <p>Projeto unifamiliar Térreo de altíssimo custo-benefício.</p>
 
             <div class="image-placeholder">
-                <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
+                <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" class="plan-image">
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -556,22 +424,6 @@
                 <li><strong>Área Social:</strong> Salas de Estar (15,01 m²) e Jantar (15,60 m²) integradas.</li>
             </ul>
             
-            <div class="pdf-links">
-                <h3>📥 Documentação Técnica</h3>
-             <ul class="details-list" style="list-style: none; padding-left: 0;">
-                    <li>
-                        <a href="BLK - CASA 03 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo (PDF)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BLK - CASA 03 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">📐</span> Fachada Principal e Cortes (PDF)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
                 <p class="price">R$ 390.000,00</p>
@@ -586,7 +438,8 @@
             <p>Projeto de dois pavimentos com foco total em conforto e privacidade.</p>
 
             <div class="image-placeholder">
-                <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
+                <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" class="plan-image">
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -596,22 +449,6 @@
                 <li><strong>Área Social:</strong> Salas de Estar e Jantar integradas com 32 m².</li>
             </ul>
     
-            <div class="pdf-links">
-                <h3>📥 Documentação Técnica</h3>
-                <ul class="details-list" style="list-style: none; padding-left: 0;">
-                    <li>
-             <a href="BLK - CASA 04 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BLK - CASA 04 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
-                            <span class="pdf-icon">📐</span> Fachada Principal e Cortes (PDF)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
                 <p class="price">R$ 420.000,00</p>
@@ -622,17 +459,115 @@
         </section>
 
         <section class="content-section highlight-box">
-            <h2 class="section-title" id="sistema">💎 Tecnologia Monolítica ZAPI: O Padrão de Luxo em Construção</h2>
+            <h2 class="section-title" id="sistema">💎 Tecnologia Monolítica **EngeTec**: O Padrão de Luxo em Construção</h2>
             <p>A exclusividade de morar bem, com a segurança, o isolamento e a velocidade do Sistema Monolítico de Alta Performance.</p>
             
             <ul class="included-list">
                 <li>**EPS de Alta Densidade:** Máximo conforto térmico e acústico, essencial no clima litorâneo.</li>
-                <li>**Estrutura Aço/Concreto:** Malha de Aço em CA-70 Galvanizado, tecnologia GERDAU exclusiva para ZAPI SOLUÇÕES.</li>
+                <li>**Estrutura Aço/argamassa estrutural FCK 25mpa** em Malha de Aço em CA-70 Galvanizado, tecnologia GERDAU exclusiva para **ZAPI Soluções**.</li>
                 <li>**Entrega Garantida:** Sua residência de luxo totalmente entregue em apenas **12 meses**.</li>
             </ul>
         </section>
 
         <section class="content-section">
             <h2 class="section-title" id="incluso">✅ Pacote "Chave na Mão" com Acabamento Premium</h2>
-            <p>O valor de
+            <p>O valor de investimento inclui o projeto **chave na mão** e todos os itens abaixo:</p>
+            <ul class="included-list">
+              <li>**Projetos de Engenharia:** Estrutural, de Instalações, Isométricos, Luminotécnico e Lógico.</li>
+                <li>**Execução Completa:** Mão de Obra e materiais de toda a construção e acabamentos.</li>
+                <li>**Lazer Completo:** Piscina com infraestrutura, Sauna à Vapor e Área Gourmet com Churrasqueira.</li>
+                <li>
+                    **Acabamentos Premium:** Granitos, Blindex, Esquadrias Linha GOLD e Revestimentos 
+                    <a href="https://www.portobello.com.br/revestimentos?channel=portobello-shop" target="_blank">PORTOBELLO</a> 
+                    (até R$ 80,00/m²).
+                </li>
+              <li>**Sustentabilidade:** Previsão para Geração de Energia Fotovoltaica (Solar) e Previsão para Gerador de até 35KVA.</li>
+                <li>**Instalações:** Hidráulica e Hidrosanitário com Projetos Isométricos e Metais de design.</li>
+                <li>**Design Interno:** Pintura Total em Suvinil Toque de Seda e Rebaixamentos em Drywall elegantes.</li>
+                <li>**Iluminação de Destaque:** Projeto e execução em parceria com a Ilumina Iluminação.</li>
+            </ul>
+        </section>
 
+        <section class="content-section">
+            <h2 class="section-title" id="condicoes">💰 Condições Exclusivas de Investimento</h2>
+            <ul class="offer-list">
+                <li>**Máxima Flexibilidade:** Parcelamento em até **20X SEM JUROS** diretamente com a construtora.</li>
+                <li>**Fluxo Favorável:** **NÃO** solicitamos valores de entrada.</li>
+                <li>**Compromisso e Transparência:** **SEU ORÇAMENTO É VÁLIDO DO INÍCIO AO FIM, SEM ADITIVOS DE OBRA.**</li>
+                <li>**Zero Burocracia:** Assumimos **TODA a Legalização** (Projetos Complementares, Licenciamento Ambiental e Habite-se).</li>
+                <li>Contrato assinado diretamente com nossa Acessória Jurídica, garantindo sua segurança.</li>
+            </ul>
+    
+          <p style="text-align: center; font-style: italic; margin-top: 15px; font-size: 0.85em;">
+                <strong>Oferta exclusiva de Novembro de 2025.</strong><br>
+                O prazo de entrega é contabilizado a partir da assinatura do contrato com nosso setor jurídico.
+            </p>
+        </section>
+
+        <footer class="contact-footer">
+            <h2>Pronto para Viver o Luxo Próximo ao Mar?</h2>
+            <p>Agende uma visita à nossa fábrica em Três Rios/RJ para conhecer a tecnologia Monolítica em ação e veja nossos projetos em andamento.</p>
+            <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." target="_blank">FALE AGORA COM NOSSO CONSULTOR EXCLUSIVO</a>
+        </footer>
+    </div>
+
+    <footer class="info-footer">
+        <div class="city-data">
+            <div class="city-item">
+                **Rio de Janeiro** (BR)
+                <span class="time" id="time-rio">22:47, 18/11/2025</span>
+                <span>Clima: 23°C, Chuva</span>
+            </div>
+            <div class="city-item">
+                **Nova York** (EUA)
+                <span class="time" id="time-ny">20:47, 18/11/2025</span>
+                <span>Clima: 5°C, Nublado</span>
+            </div>
+            <div class="city-item">
+                **Londres** (RU)
+                <span class="time" id="time-lon">01:47, 19/11/2025</span>
+                <span>Clima: 4°C, Neblina</span>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 10px; font-style: italic;">Horários e Temperaturas Estimadas no momento da geração.</p>
+    </footer>
+
+    <div class="fixed-icons-container">
+        
+        <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20do%20Blue%20Lake%20e%20gostaria%20de%20falar%20com%20um%20consultor." 
+           target="_blank" 
+           title="Fale com o Consultor pelo WhatsApp"
+           class="fixed-icon whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <div class="assistant-bubble" id="assistant-bubble">
+            👋 Olá! Sou sua assistente. Precisa de ajuda para **comparar as casas** ou tirar dúvidas sobre o Sistema Monolítico de Luxo?
+        </div>
+        
+        <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." 
+           target="_blank" 
+           title="Fale com a Assistente pelo WhatsApp"
+           class="fixed-icon assistant-figure">
+            👩🏻‍💻
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bubble = document.getElementById('assistant-bubble');
+            
+            // 1. Aparece após 2 segundos
+            setTimeout(() => {
+                bubble.classList.add('show');
+            }, 2000); 
+
+            // 2. Desaparece após 10 segundos no total
+            setTimeout(() => {
+                bubble.classList.remove('show');
+            }, 10000); 
+        });
+    </script>
+
+</body>
+</html>
