@@ -67,96 +67,287 @@
         /* Tabela de Comparação */
         .comparison-table {
             width: 100%;
-            border-radius: 6px; /* Arredondamento reduzido */
+            border-collapse: separate;
+            border-spacing: 0;
+            background: white;
             box-shadow: var(--box-shadow);
+            border-radius: 6px; /* Arredondamento reduzido */
+            overflow: hidden;
         }
         .comparison-table th, .comparison-table td {
             padding: 10px; /* Padding drasticamente reduzido */
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
             font-size: 0.9em; /* Fonte reduzida */
         }
         .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
             font-size: 0.95em;
+            vertical-align: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .comparison-table td {
+            font-weight: 500;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table td:last-child {
+            border-right: none;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: var(--highlight-bg);
         }
         .comparison-table .price-cell {
+            color: var(--secondary-color); /* Cor destacada para valores na tabela */
             font-size: 1.1em; /* Reduzido */
+            font-weight: 700;
         }
         .comparison-table .cta-cell a {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
             padding: 6px 12px; /* Padding reduzido */
+            text-decoration: none;
+            border-radius: 50px;
             font-size: 0.85em; /* Reduzido */
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .comparison-table .cta-cell a:hover {
+            background-color: #b38600;
+            transform: translateY(-1px);
+        }
+        .comparison-table .highlight-row td {
+            background-color: #FFECC4; 
+            border: 2px solid var(--secondary-color);
         }
 
         /* Seções e Estilos de Detalhes */
         .content-section {
             padding: 20px; /* Padding drasticamente reduzido */
             margin-bottom: 20px; /* Margem reduzida */
+            background: white;
             border-radius: 6px; 
             box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        .content-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
         .section-title {
-            font-size: 1.6em; /* Drasticamente reduzido */
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 8px;
             margin-bottom: 20px; /* Margem reduzida */
+            font-size: 1.6em; /* Drasticamente reduzido */
+            font-weight: 600;
         }
         .highlight-box {
+            background-color: var(--highlight-bg);
             padding: 20px; /* Padding reduzido */
-            margin: 30px 0; /* Margem reduzida */
             border-left: 4px solid var(--secondary-color);
+            margin: 30px 0; /* Margem reduzida */
             border-radius: 6px;
+        }
+        .image-placeholder {
+            text-align: center;
+            margin: 15px 0; /* Margem reduzida */
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 6px;
+        }
+        .image-placeholder img.plan-image { /* Adicionado seletor para imagens de planta */
+            max-width: 60%; /* Imagem menor para desktop */
+            width: auto; /* Garante ajuste */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .details-list, .included-list {
+            list-style: none;
+            padding: 0;
         }
         .details-list li, .included-list li {
             padding: 8px 0; /* Padding drasticamente reduzido */
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
             font-size: 0.95em; /* Reduzido */
+        }
+        .details-list li:last-child, .included-list li:last-child {
+            border-bottom: none;
+        }
+        .details-list li::before, .included-list li::before {
+            content: '✓'; 
+            margin-right: 10px;
+            color: var(--success-color);
+            font-size: 1.1em;
+            font-weight: 900;
         }
         .pdf-links {
             margin-top: 25px;
             padding-top: 15px; 
+            border-top: 1px solid #ccc;
         }
         .pdf-links h3 {
+            color: var(--primary-color);
             font-size: 1.4em; /* Reduzido */
             margin-bottom: 10px;
+            font-weight: 600;
         }
-        
-        /* FOCO NA REDUÇÃO DO NÚMERO DE PREÇO */
+        .pdf-links .pdf-item {
+            font-weight: 500; 
+            padding: 8px 0; /* Padding reduzido */
+            font-size: 0.95em;
+        }
+        .pdf-icon {
+            font-size: 1.3em;
+            margin-right: 10px;
+        }
         .price-box {
+            background: var(--secondary-color);
             padding: 25px; /* Padding reduzido */
-            border-radius: 10px; 
+            text-align: center;
+            border-radius: 10px;
             margin: 30px 0; /* Margem reduzida */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border: 2px solid var(--primary-color);
         }
         .price-box h3 {
+            color: var(--primary-color);
+            margin-top: 0;
             font-size: 1.3em; /* Reduzido */
+            text-transform: uppercase;
         }
         .price-box .price {
-            font-size: 2.5em; /* REDUÇÃO MÁXIMA para o preço, garantindo que caiba no mobile e no design clean */
+            font-family: 'Georgia', serif; 
+            font-size: 2.5em; /* REDUÇÃO MÁXIMA para o preço */
+            color: var(--primary-color); /* Mudei para primary-color para contraste forte com o dourado */
+            font-weight: 900;
             margin: 5px 0; 
             line-height: 1.2;
         }
-        .price-box p {
-            font-size: 1em; /* Reduzido */
+        .price-box .traditional-price {
+            color: var(--primary-color); /* Ajustado para primário para manter a paleta */
+            font-weight: bold;
+            text-decoration: line-through;
         }
-        /* FIM DA REDUÇÃO DO NÚMERO DE PREÇO */
-
+        .offer-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
         .offer-list li {
             margin-bottom: 10px;
+            font-weight: 500;
             padding: 12px; /* Padding reduzido */
+            background: #ffffff;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color); 
+            line-height: 1.4;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
             font-size: 0.95em; /* Reduzido */
         }
+        .offer-list li::before {
+            content: '⭐';
+            margin-right: 10px;
+            font-size: 1em;
+        }
         .contact-footer {
+            text-align: center;
             padding: 30px 0; /* Padding reduzido */
+            background: var(--primary-color);
+            color: white;
+            border-radius: 0 0 8px 8px;
             margin-top: 30px; /* Margem reduzida */
         }
         .contact-footer h2 {
+            color: white;
+            border-bottom: none;
+            margin-bottom: 25px;
             font-size: 1.6em; /* Reduzido */
         }
         .contact-footer a {
+            display: inline-block;
+            background-color: var(--whatsapp-color);
+            color: white;
             padding: 12px 30px; /* Padding reduzido */
+            margin-top: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
             font-size: 1.2em; /* Reduzido */
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+            text-transform: uppercase;
+        }
+        .contact-footer a:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
         }
 
         /* Estilos da Assistente Virtual Flutuante */
+        .assistant-container {
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .assistant-bubble {
+            background-color: var(--secondary-color); 
+            color: var(--primary-color);
+            padding: 10px 15px; /* Padding reduzido */
+            border-radius: 15px 15px 0 15px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            margin-bottom: 10px;
+            max-width: 220px; /* Largura reduzida */
+            font-size: 0.9em; /* Reduzido */
+            line-height: 1.4;
+            opacity: 0;
+            transform: scale(0.9) translateY(10px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .assistant-bubble.show {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
         .assistant-figure {
             width: 50px; /* Tamanho reduzido */
             height: 50px; /* Tamanho reduzido */
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            cursor: pointer;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 2em; /* Reduzido */
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .assistant-figure:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para links dentro da lista de inclusos */
+        .included-list a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .included-list a:hover {
+            color: var(--secondary-color);
         }
 
         /* RESPONSIVIDADE (Mobile) */
@@ -175,12 +366,29 @@
             }
             .section-title {
                 font-size: 1.4em;
+                margin-bottom: 15px;
             }
             .price-box .price {
                 font-size: 2.2em; /* Garantindo que caiba no mobile */
             }
             .comparison-table {
-                min-width: 700px;
+                min-width: 700px; /* Mantém largura mínima para scroll horizontal */
+            }
+            .image-placeholder img.plan-image {
+                max-width: 90%; /* Aumenta um pouco para ser visível em telas menores */
+            }
+            .assistant-container {
+                bottom: 10px;
+                right: 10px;
+            }
+            .assistant-figure {
+                width: 45px;
+                height: 45px;
+                font-size: 1.8em;
+            }
+            .assistant-bubble {
+                max-width: 180px;
+                font-size: 0.8em;
             }
         }
     </style>
@@ -205,8 +413,7 @@
                         <tr>
                             <th>Planta</th>
                             <th>Quartos</th>
-                            <th>Área Total</th>
-                            <th>Investimento (Monolítico)<br>(Entrega em 12 meses)</th>
+                            <th>Área Total Construída</th> <th>Investimento (Monolítico)<br>(Entrega em 12 meses)</th>
                             <th>Custo Estimado (Convencional)<br>(Entrega em 15 meses)</th>
                             <th>Ver Projeto</th>
                         </tr>
@@ -256,8 +463,7 @@
             <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade. Otimizado para o Sistema Monolítico EngeTec.</p>
 
             <div class="image-placeholder">
-                <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" width="600">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
+                <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -298,8 +504,7 @@
             <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo.</p>
 
             <div class="image-placeholder">
-                <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" width="600">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
+                <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -341,8 +546,7 @@
             <p>Projeto unifamiliar Térreo de altíssimo custo-benefício.</p>
 
             <div class="image-placeholder">
-                <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" width="600">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
+                <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -382,8 +586,7 @@
             <p>Projeto de dois pavimentos com foco total em conforto e privacidade.</p>
 
             <div class="image-placeholder">
-                <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" width="600">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
+                <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" class="plan-image"> <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -431,74 +634,5 @@
 
         <section class="content-section">
             <h2 class="section-title" id="incluso">✅ Pacote "Chave na Mão" com Acabamento Premium</h2>
-            <p>O valor de investimento inclui o projeto <strong>chave na mão</strong> e todos os itens abaixo:</p>
-            <ul class="included-list">
-              <li>**Projetos de Engenharia:** Estrutural, de Instalações, Isométricos, Luminotécnico e Lógico.</li>
-                <li>**Execução Completa:** Mão de Obra e materiais de toda a construção e acabamentos.</li>
-                <li>**Lazer Completo:** Piscina com infraestrutura, Sauna à Vapor e Área Gourmet com Churrasqueira.</li>
-                <li>
-                    **Acabamentos Premium:** Granitos, Blindex, Esquadrias Linha GOLD e Revestimentos 
-                    <a href="https://www.portobello.com.br/revestimentos?channel=portobello-shop" target="_blank">PORTOBELLO</a> 
-                    (até R$ 80,00/m²).
-                </li>
-              <li>**Sustentabilidade:** Previsão para Geração de Energia Fotovoltaica (Solar) e Previsão para Gerador de até 35KVA.</li>
-                <li>**Instalações:** Hidráulica e Hidrosanitário com Projetos Isométricos e Metais de design.</li>
-                <li>**Design Interno:** Pintura Total em Suvinil Toque de Seda e Rebaixamentos em Drywall elegantes.</li>
-                <li>**Iluminação de Destaque:** Projeto e execução em parceria com a Ilumina Iluminação.</li>
-            </ul>
-        </section>
+            <p>O valor de
 
-        <section class="content-section">
-            <h2 class="section-title" id="condicoes">💰 Condições Exclusivas de Investimento</h2>
-            <ul class="offer-list">
-                <li>**Máxima Flexibilidade:** Parcelamento em até **20X SEM JUROS** diretamente com a construtora.</li>
-                <li>**Fluxo Favorável:** **NÃO** solicitamos valores de entrada.</li>
-                <li>**Compromisso e Transparência:** **SEU ORÇAMENTO É VÁLIDO DO INÍCIO AO FIM, SEM ADITIVOS DE OBRA.**</li>
-                <li>**Zero Burocracia:** Assumimos **TODA a Legalização** (Projetos Complementares, Licenciamento Ambiental e Habite-se).</li>
-                <li>Contrato assinado diretamente com nossa Acessória Jurídica, garantindo sua segurança.</li>
-            </ul>
-    
-          <p style="text-align: center; font-style: italic; margin-top: 15px; font-size: 0.85em;">
-                <strong>*Oferta exclusiva de Novembro de 2025.*</strong><br>
-                O prazo de entrega é contabilizado a partir da assinatura do contrato com nosso setor jurídico.
-            </p>
-        </section>
-
-        <footer class="contact-footer">
-            <h2>Pronto para Viver o Luxo Próximo ao Mar?</h2>
-            <p>Agende uma visita à nossa fábrica em Três Rios/RJ para conhecer a tecnologia Monolítica em ação e veja nossos projetos em andamento.</p>
-            <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." target="_blank">FALE AGORA COM NOSSO CONSULTOR EXCLUSIVO</a>
-        </footer>
-    </div>
-
-    <div class="assistant-container">
-        <div class="assistant-bubble" id="assistant-bubble">
-            👋 Olá! Sou sua assistente. Precisa de ajuda para **comparar as casas** ou tirar dúvidas sobre o Sistema Monolítico de Luxo?
-        </div>
-        
-        <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." 
-           target="_blank" 
-           title="Fale com a Assistente pelo WhatsApp"
-           class="assistant-figure">
-            👩🏻‍💻
-        </a>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const bubble = document.getElementById('assistant-bubble');
-            
-            // 1. Aparece após 2 segundos
-            setTimeout(() => {
-                bubble.classList.add('show');
-            }, 2000); 
-
-            // 2. Desaparece após 10 segundos no total
-            setTimeout(() => {
-                bubble.classList.remove('show');
-            }, 10000); 
-        });
-    </script>
-
-</body>
-</html>
