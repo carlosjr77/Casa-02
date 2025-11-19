@@ -16,191 +16,171 @@
             --price-color: #A30000; /* Vermelho Vinho Sóbrio para Preço */
             --success-color: #00A896; /* Verde-Água Calmo (Natureza e Tranquilidade) */
             --whatsapp-color: #25D366; 
-            --box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Sombra mais suave */
+            --box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra mais discreta */
         }
 
         /* Estilos Base */
         body {
             font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
-            line-height: 1.6; /* Reduzido para 1.6 */
+            line-height: 1.5; /* Reduzido para 1.5 */
             margin: 0;
             padding: 0;
             background-color: var(--bg-light);
             color: var(--text-dark);
             -webkit-font-smoothing: antialiased;
-            font-size: 15px; /* Fonte base um pouco menor */
+            font-size: 14px; /* Fonte base reduzida */
         }
         .container {
-            width: 90%;
-            max-width: 1100px; /* Max width reduzido levemente */
+            width: 95%; /* Maior largura no desktop para reduzir a altura */
+            max-width: 1000px; /* Largura máxima reduzida */
             margin: auto;
-            padding: 20px 0; /* Padding vertical reduzido */
+            padding: 15px 0; /* Padding vertical drasticamente reduzido */
         }
 
         /* Header e Título */
         .header-main {
             background: var(--primary-color);
             color: white;
-            padding: 2em 0; /* Padding reduzido */
+            padding: 1.5em 0; /* Padding reduzido */
             text-align: center;
-            border-bottom: 4px solid var(--secondary-color); /* Borda mais fina */
-            letter-spacing: 1.5px; /* Espaçamento de letra ajustado */
+            border-bottom: 3px solid var(--secondary-color); /* Borda mais fina */
+            letter-spacing: 1px; /* Espaçamento de letra reduzido */
         }
         .header-main h1 {
             margin: 0;
-            font-size: 2em; /* Reduzido */
-            line-height: 1.2;
-            text-transform: uppercase;
+            font-size: 1.8em; /* Drasticamente reduzido */
             font-weight: 700;
         }
         .header-main p {
-            margin-top: 8px;
-            font-size: 1.1em; /* Reduzido */
+            margin-top: 5px;
+            font-size: 1em; /* Reduzido */
             font-style: italic;
-            opacity: 0.9;
+            opacity: 0.8;
         }
         
         /* Tabela Responsiva */
         .table-responsive {
             overflow-x: auto; 
-            margin: 20px 0; /* Margem reduzida */
+            margin: 15px 0; /* Margem reduzida */
         }
 
         /* Tabela de Comparação */
         .comparison-table {
             width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            background: white;
+            border-radius: 6px; /* Arredondamento reduzido */
             box-shadow: var(--box-shadow);
-            border-radius: 8px; /* Arredondamento reduzido */
-            overflow: hidden;
         }
         .comparison-table th, .comparison-table td {
-            padding: 14px; /* Padding reduzido */
-            text-align: center;
-            border-bottom: 1px solid #eee;
-            border-right: 1px solid #eee;
-            font-size: 0.95em;
+            padding: 10px; /* Padding drasticamente reduzido */
+            font-size: 0.9em; /* Fonte reduzida */
         }
         .comparison-table th {
-            font-size: 1em; /* Mantido para destaque */
-            letter-spacing: 0.3px;
+            font-size: 0.95em;
         }
         .comparison-table .price-cell {
-            font-size: 1.2em; /* Reduzido */
-            font-weight: 700;
+            font-size: 1.1em; /* Reduzido */
         }
         .comparison-table .cta-cell a {
-            padding: 8px 16px; /* Padding reduzido */
-            font-size: 0.9em; /* Reduzido */
+            padding: 6px 12px; /* Padding reduzido */
+            font-size: 0.85em; /* Reduzido */
         }
 
         /* Seções e Estilos de Detalhes */
         .content-section {
-            padding: 30px; /* Padding reduzido */
-            margin-bottom: 30px; /* Margem reduzida */
-            border-radius: 8px; /* Arredondamento reduzido */
+            padding: 20px; /* Padding drasticamente reduzido */
+            margin-bottom: 20px; /* Margem reduzida */
+            border-radius: 6px; 
             box-shadow: var(--box-shadow);
         }
         .section-title {
-            font-size: 1.8em; /* Reduzido */
-            padding-bottom: 10px;
-            margin-bottom: 25px; /* Margem reduzida */
+            font-size: 1.6em; /* Drasticamente reduzido */
+            padding-bottom: 8px;
+            margin-bottom: 20px; /* Margem reduzida */
         }
         .highlight-box {
-            padding: 30px; /* Padding reduzido */
-            margin: 40px 0; /* Margem reduzida */
-            border-left: 5px solid var(--secondary-color);
-            border-radius: 8px;
-        }
-        .image-placeholder {
-            margin: 20px 0; /* Margem reduzida */
+            padding: 20px; /* Padding reduzido */
+            margin: 30px 0; /* Margem reduzida */
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 6px;
         }
         .details-list li, .included-list li {
-            padding: 10px 0; /* Padding reduzido */
-            font-size: 1em; /* Reduzido */
+            padding: 8px 0; /* Padding drasticamente reduzido */
+            font-size: 0.95em; /* Reduzido */
         }
         .pdf-links {
-            margin-top: 30px;
-            padding-top: 20px; 
+            margin-top: 25px;
+            padding-top: 15px; 
         }
         .pdf-links h3 {
-            font-size: 1.5em; /* Reduzido */
-            margin-bottom: 15px;
+            font-size: 1.4em; /* Reduzido */
+            margin-bottom: 10px;
         }
+        
+        /* FOCO NA REDUÇÃO DO NÚMERO DE PREÇO */
         .price-box {
-            padding: 30px; /* Padding reduzido */
-            border-radius: 12px; /* Arredondamento reduzido */
-            margin: 40px 0; /* Margem reduzida */
+            padding: 25px; /* Padding reduzido */
+            border-radius: 10px; 
+            margin: 30px 0; /* Margem reduzida */
         }
         .price-box h3 {
-            font-size: 1.5em; /* Reduzido */
+            font-size: 1.3em; /* Reduzido */
         }
         .price-box .price {
-            font-size: 3.2em; /* MANTIDO e ligeiramente reduzido para garantir que caiba */
-            margin: 0; /* Margem zerada para compactar */
+            font-size: 2.5em; /* REDUÇÃO MÁXIMA para o preço, garantindo que caiba no mobile e no design clean */
+            margin: 5px 0; 
+            line-height: 1.2;
         }
         .price-box p {
-            font-size: 1.1em; /* Reduzido */
-        }
-        .offer-list li {
-            margin-bottom: 15px;
-            padding: 15px; /* Padding reduzido */
             font-size: 1em; /* Reduzido */
         }
+        /* FIM DA REDUÇÃO DO NÚMERO DE PREÇO */
+
+        .offer-list li {
+            margin-bottom: 10px;
+            padding: 12px; /* Padding reduzido */
+            font-size: 0.95em; /* Reduzido */
+        }
         .contact-footer {
-            padding: 40px 0; /* Padding reduzido */
-            margin-top: 40px; /* Margem reduzida */
+            padding: 30px 0; /* Padding reduzido */
+            margin-top: 30px; /* Margem reduzida */
         }
         .contact-footer h2 {
-            font-size: 1.8em; /* Reduzido */
+            font-size: 1.6em; /* Reduzido */
         }
         .contact-footer a {
-            padding: 15px 35px; /* Padding reduzido */
-            font-size: 1.4em; /* Reduzido */
+            padding: 12px 30px; /* Padding reduzido */
+            font-size: 1.2em; /* Reduzido */
         }
 
         /* Estilos da Assistente Virtual Flutuante */
-        .assistant-container {
-            bottom: 20px;
-            right: 20px;
-        }
-
-        .assistant-bubble {
-            padding: 12px 18px; /* Padding reduzido */
-            max-width: 250px; /* Largura reduzida */
-            font-size: 0.95em; /* Reduzido */
-        }
-
         .assistant-figure {
-            width: 60px; /* Tamanho reduzido */
-            height: 60px; /* Tamanho reduzido */
-            font-size: 2.2em; /* Reduzido */
+            width: 50px; /* Tamanho reduzido */
+            height: 50px; /* Tamanho reduzido */
+            font-size: 2em; /* Reduzido */
         }
 
-        /* RESPONSIVIDADE */
+        /* RESPONSIVIDADE (Mobile) */
         @media (max-width: 768px) {
             body {
-                font-size: 14px;
+                font-size: 13px;
             }
             .header-main h1 {
-                font-size: 1.5em;
+                font-size: 1.4em;
             }
             .header-main p {
-                font-size: 0.9em;
+                font-size: 0.85em;
             }
             .content-section {
-                padding: 20px;
+                padding: 15px;
             }
             .section-title {
-                font-size: 1.5em;
+                font-size: 1.4em;
             }
             .price-box .price {
-                font-size: 2.8em; /* Garante que caiba no mobile */
+                font-size: 2.2em; /* Garantindo que caiba no mobile */
             }
             .comparison-table {
-                min-width: 750px;
+                min-width: 700px;
             }
         }
     </style>
@@ -234,7 +214,7 @@
                     <tbody>
                         <tr>
                             <td><strong>Planta 01</strong></td>
-                            <td>5 Quartos, sendo 3 Suítes</td>
+                            <td>5 Quartos, 3 Suítes</td>
                             <td>198 m²</td>
                             <td class="price-cell">R$ 480.000,00*</td>
                             <td class="price-cell">R$ 530.000,00*</td> 
@@ -243,7 +223,7 @@
                         <tr class="highlight-row">
                             <td><strong>Planta 02 (Destaque)</strong></td>
                             
-                            <td>4 Quartos, sendo 2 Suítes</td>
+                            <td>4 Quartos, 2 Suítes</td>
                             <td>219,64 m²</td>
                             <td class="price-cell">R$ 450.000,00*</td>
                             <td class="price-cell">R$ 510.000,00*</td> 
@@ -251,7 +231,7 @@
                         </tr>
                         <tr>
                             <td><strong>Planta 03</strong></td>
-                            <td>3 Quartos, sendo 1 Suíte</td>
+                            <td>3 Quartos, 1 Suíte</td>
                             <td>110,99 m²</td>
                             <td class="price-cell">R$ 390.000,00*</td>
                             <td class="price-cell">R$ 440.000,00*</td> 
@@ -259,7 +239,7 @@
                         </tr>
                         <tr>
                             <td><strong>Planta 04</strong></td>
-                            <td>3 Quartos, sendo 3 Suítes</td>
+                            <td>3 Quartos, 3 Suítes</td>
                             <td>189,92 m²</td>
                             <td class="price-cell">R$ 420.000,00*</td>
                             <td class="price-cell">R$ 470.000,00*</td>
@@ -268,7 +248,7 @@
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: right; font-size: 0.9em; margin-top: 10px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
+            <p style="text-align: right; font-size: 0.85em; margin-top: 8px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
         </section>
 
         <section class="content-section">
@@ -306,7 +286,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO EXCLUSIVO (Planta 01 - Monolítico)</h3>
                 <p class="price">R$ 480.000,00</p>
-                <p style="font-size: 1.1em;">
+                <p style="font-size: 1em;">
                     Fale com nosso consultor para condições de parcelamento em até **20X SEM JUROS**.
                 </p>
             </div>
@@ -315,7 +295,7 @@
 
         <section class="content-section" style="border: 2px solid var(--secondary-color);">
             <h2 class="section-title" id="planta-02">✨ Planta 02: 4 Quartos, 2 Suítes - 219,64 m² (Maior Área)</h2>
-            <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo. Um projeto de alto design.</p>
+            <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo.</p>
 
             <div class="image-placeholder">
                 <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" width="600">
@@ -348,7 +328,7 @@
              <div class="price-box">
                 <h3>OFERTA ESPECIAL (Planta 02 - Sistema Monolítico)</h3>
                 <p class="price">R$ 450.000,00</p>
-                <p style="font-size: 1.1em;">
+                <p style="font-size: 1em;">
                    
                     Economize **R$ 60.000,00** comparado ao Método Tradicional.<br>
                     (Custo do Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, com prazo de até 15 meses para entrega total).
@@ -358,7 +338,7 @@
 
         <section class="content-section">
           <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suítes - 110,99 m²</h2>
-            <p>Projeto unifamiliar Térreo de altíssimo custo-benefício. Ideal para quem prioriza o lazer e a agilidade na entrega.</p>
+            <p>Projeto unifamiliar Térreo de altíssimo custo-benefício.</p>
 
             <div class="image-placeholder">
                 <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" width="600">
@@ -391,7 +371,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
                 <p class="price">R$ 390.000,00</p>
-                <p style="font-size: 1.1em;">
+                <p style="font-size: 1em;">
                     Qualidade, agilidade e excelência em um projeto compacto de luxo.
                 </p>
             </div>
@@ -399,7 +379,7 @@
 
         <section class="content-section">
             <h2 class="section-title" id="planta-04">☀️ Planta 04: 3 Quartos, 3 Suítes - 189,92 m²</h2>
-            <p>Projeto de dois pavimentos com foco total em conforto. Todas as 3 suítes garantem máxima privacidade.</p>
+            <p>Projeto de dois pavimentos com foco total em conforto e privacidade.</p>
 
             <div class="image-placeholder">
                 <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" width="600">
@@ -432,7 +412,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
                 <p class="price">R$ 420.000,00</p>
-                <p style="font-size: 1.1em;">
+                <p style="font-size: 1em;">
                     O equilíbrio perfeito entre design, conforto e o prazo de entrega reduzido.
                 </p>
             </div>
@@ -457,7 +437,7 @@
                 <li>**Execução Completa:** Mão de Obra e materiais de toda a construção e acabamentos.</li>
                 <li>**Lazer Completo:** Piscina com infraestrutura, Sauna à Vapor e Área Gourmet com Churrasqueira.</li>
                 <li>
-                    **Acabamentos Premium:** Granitos nobres, Blindex, Esquadrias Linha GOLD e Revestimentos 
+                    **Acabamentos Premium:** Granitos, Blindex, Esquadrias Linha GOLD e Revestimentos 
                     <a href="https://www.portobello.com.br/revestimentos?channel=portobello-shop" target="_blank">PORTOBELLO</a> 
                     (até R$ 80,00/m²).
                 </li>
@@ -478,7 +458,7 @@
                 <li>Contrato assinado diretamente com nossa Acessória Jurídica, garantindo sua segurança.</li>
             </ul>
     
-          <p style="text-align: center; font-style: italic; margin-top: 20px; font-size: 0.9em;">
+          <p style="text-align: center; font-style: italic; margin-top: 15px; font-size: 0.85em;">
                 <strong>*Oferta exclusiva de Novembro de 2025.*</strong><br>
                 O prazo de entrega é contabilizado a partir da assinatura do contrato com nosso setor jurídico.
             </p>
