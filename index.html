@@ -16,6 +16,7 @@
             --highlight-bg: #F0F5F9; /* Fundo Cinza Azulado Suave */
             --whatsapp-color: #25D366; 
             --box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra mais discreta */
+            --saving-color: #900C3F; /* Cor para destaque de economia */
         }
 
         /* Estilos Base */
@@ -137,7 +138,7 @@
         .details-list li::before, .included-list li::before {
             content: '✓'; 
             margin-right: 10px;
-            color: var(--success-color);
+            color: var(--whatsapp-color);
             font-weight: 900;
         }
         
@@ -163,7 +164,23 @@
         .price-box .traditional-price {
             color: var(--primary-color);
             text-decoration: line-through;
+            font-size: 0.9em;
+            opacity: 0.7;
+            display: inline-block;
+            margin-right: 10px;
         }
+        .price-box .saving {
+            color: var(--saving-color);
+            font-weight: 700;
+            display: block;
+            margin-top: 5px;
+        }
+        .price-box .small-note {
+            font-size: 0.9em;
+            margin-top: 15px;
+            color: var(--primary-color);
+        }
+
         .offer-list li {
             background: #ffffff;
             border-left: 4px solid var(--secondary-color); 
@@ -187,9 +204,18 @@
         .contact-footer a {
             background-color: var(--whatsapp-color);
             color: white;
-            padding: 12px 30px;
+            padding: 8px 20px; 
             border-radius: 50px;
-            font-size: 1.2em;
+            font-size: 1em; 
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+        }
+        .contact-footer a:hover {
+            background-color: #128C7E;
+            transform: translateY(-1px);
         }
 
         /* FLUTUANTES */
@@ -255,7 +281,7 @@
             color: #b0b0b0;
             padding: 15px 0;
             font-size: 0.8em;
-            margin-top: 0; /* Junta com o footer principal */
+            margin-top: 0; 
         }
         .info-footer .city-data {
             display: flex;
@@ -287,6 +313,10 @@
             .fixed-icons-container { bottom: 10px; right: 10px; gap: 8px; }
             .fixed-icon { width: 45px; height: 45px; font-size: 1.6em; }
             .assistant-bubble { right: 55px; bottom: 45px; max-width: 150px; font-size: 0.75em; }
+            .contact-footer a {
+                padding: 10px 25px; 
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -361,8 +391,8 @@
             <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade. Otimizado para o Sistema Monolítico EngeTec.</p>
 
             <div class="image-placeholder">
-                <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" class="plan-image">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
+                <img src="planta-01-colorida.png" alt="Planta Humanizada Planta 01" class="plan-image">
+                <p><strong>[Planta Humanizada TÉRREO e 1º PISO - Planta 01]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -376,7 +406,11 @@
                 <h3>INVESTIMENTO EXCLUSIVO (Planta 01 - Monolítico)</h3>
                 <p class="price">R$ 480.000,00</p>
                 <p style="font-size: 1em;">
-                    Fale com nosso consultor para condições de parcelamento em até **20X SEM JUROS**.
+                    <span class="traditional-price">Custo Estimado Tradicional: R$ 530.000,00</span>
+                    <span class="saving">Economize R$ 50.000,00 com o Monolítico!</span>
+                </p>
+                <p class="small-note">
+                    Prazo de entrega Monolítico: 12 meses (Tradicional: 15 meses).
                 </p>
             </div>
         </section>
@@ -387,8 +421,8 @@
             <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo.</p>
 
             <div class="image-placeholder">
-                <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" class="plan-image">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
+                <img src="planta-colorida.png" alt="Planta Humanizada Planta 02" class="plan-image">
+                <p><strong>[Planta Humanizada TÉRREO e 1º PISO - Planta 02]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -399,22 +433,25 @@
             </ul>
    
              <div class="price-box">
-                <h3>OFERTA ESPECIAL (Planta 02 - Sistema Monolítico)</h3>
+                <h3>OFERTA ESPECIAL (Planta 02 - Monolítico)</h3>
                 <p class="price">R$ 450.000,00</p>
                 <p style="font-size: 1em;">
-                    Economize **R$ 60.000,00** comparado ao Método Tradicional.<br>
-                    (Custo do Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, com prazo de até 15 meses para entrega total).
+                    <span class="traditional-price">Custo Estimado Tradicional: R$ 510.000,00</span>
+                    <span class="saving">Economize R$ 60.000,00 com o Monolítico!</span>
+                </p>
+                <p class="small-note">
+                    Prazo de entrega Monolítico: 12 meses (Tradicional: 15 meses).
                 </p>
             </div>
         </section>
 
         <section class="content-section">
-          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suítes - 110,99 m²</h2>
+          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suíte - 110,99 m²</h2>
             <p>Projeto unifamiliar Térreo de altíssimo custo-benefício.</p>
 
             <div class="image-placeholder">
-                <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" class="plan-image">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
+                <img src="planta-03-colorida.png" alt="Planta Humanizada Planta 03" class="plan-image">
+                <p><strong>[Planta Humanizada TÉRREO - Planta 03]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -425,10 +462,14 @@
             </ul>
             
             <div class="price-box">
-                <h3>INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
+                <h3>INVESTIMENTO EXCLUSIVO (Planta 03 - Monolítico)</h3>
                 <p class="price">R$ 390.000,00</p>
                 <p style="font-size: 1em;">
-                    Qualidade, agilidade e excelência em um projeto compacto de luxo.
+                    <span class="traditional-price">Custo Estimado Tradicional: R$ 440.000,00</span>
+                    <span class="saving">Economize R$ 50.000,00 com o Monolítico!</span>
+                </p>
+                <p class="small-note">
+                    Prazo de entrega Monolítico: 12 meses (Tradicional: 15 meses).
                 </p>
             </div>
         </section>
@@ -438,8 +479,8 @@
             <p>Projeto de dois pavimentos com foco total em conforto e privacidade.</p>
 
             <div class="image-placeholder">
-                <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" class="plan-image">
-                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
+                <img src="planta-04-colorida.png" alt="Planta Humanizada Planta 04" class="plan-image">
+                <p><strong>[Planta Humanizada TÉRREO e 1º PISO - Planta 04]</strong></p>
             </div>
 
             <ul class="details-list">
@@ -450,10 +491,14 @@
             </ul>
     
             <div class="price-box">
-                <h3>INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
+                <h3>INVESTIMENTO EXCLUSIVO (Planta 04 - Monolítico)</h3>
                 <p class="price">R$ 420.000,00</p>
                 <p style="font-size: 1em;">
-                    O equilíbrio perfeito entre design, conforto e o prazo de entrega reduzido.
+                    <span class="traditional-price">Custo Estimado Tradicional: R$ 470.000,00</span>
+                    <span class="saving">Economize R$ 50.000,00 com o Monolítico!</span>
+                </p>
+                <p class="small-note">
+                    Prazo de entrega Monolítico: 12 meses (Tradicional: 15 meses).
                 </p>
             </div>
         </section>
@@ -515,17 +560,17 @@
         <div class="city-data">
             <div class="city-item">
                 **Rio de Janeiro** (BR)
-                <span class="time" id="time-rio">22:47, 18/11/2025</span>
+                <span class="time" id="time-rio">22:58, 18/11/2025</span>
                 <span>Clima: 23°C, Chuva</span>
             </div>
             <div class="city-item">
                 **Nova York** (EUA)
-                <span class="time" id="time-ny">20:47, 18/11/2025</span>
+                <span class="time" id="time-ny">20:58, 18/11/2025</span>
                 <span>Clima: 5°C, Nublado</span>
             </div>
             <div class="city-item">
                 **Londres** (RU)
-                <span class="time" id="time-lon">01:47, 19/11/2025</span>
+                <span class="time" id="time-lon">01:58, 19/11/2025</span>
                 <span>Clima: 4°C, Neblina</span>
             </div>
         </div>
