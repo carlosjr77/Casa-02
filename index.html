@@ -16,45 +16,46 @@
             --price-color: #A30000; /* Vermelho Vinho Sóbrio para Preço */
             --success-color: #00A896; /* Verde-Água Calmo (Natureza e Tranquilidade) */
             --whatsapp-color: #25D366; 
-            --box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra mais suave */
+            --box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Sombra mais suave */
         }
 
         /* Estilos Base */
         body {
-            font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif; /* Fonte mais moderna */
-            line-height: 1.7; /* Maior espaçamento entre linhas */
+            font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+            line-height: 1.6; /* Reduzido para 1.6 */
             margin: 0;
             padding: 0;
             background-color: var(--bg-light);
             color: var(--text-dark);
             -webkit-font-smoothing: antialiased;
+            font-size: 15px; /* Fonte base um pouco menor */
         }
         .container {
             width: 90%;
-            max-width: 1200px; /* Maior amplitude */
+            max-width: 1100px; /* Max width reduzido levemente */
             margin: auto;
-            padding: 30px 0; /* Mais respiro */
+            padding: 20px 0; /* Padding vertical reduzido */
         }
 
         /* Header e Título */
         .header-main {
             background: var(--primary-color);
             color: white;
-            padding: 2.5em 0;
+            padding: 2em 0; /* Padding reduzido */
             text-align: center;
-            border-bottom: 5px solid var(--secondary-color);
-            letter-spacing: 2px; /* Sofisticação */
+            border-bottom: 4px solid var(--secondary-color); /* Borda mais fina */
+            letter-spacing: 1.5px; /* Espaçamento de letra ajustado */
         }
         .header-main h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em; /* Reduzido */
             line-height: 1.2;
             text-transform: uppercase;
             font-weight: 700;
         }
         .header-main p {
-            margin-top: 10px;
-            font-size: 1.2em;
+            margin-top: 8px;
+            font-size: 1.1em; /* Reduzido */
             font-style: italic;
             opacity: 0.9;
         }
@@ -62,325 +63,144 @@
         /* Tabela Responsiva */
         .table-responsive {
             overflow-x: auto; 
-            margin: 30px 0;
+            margin: 20px 0; /* Margem reduzida */
         }
 
         /* Tabela de Comparação */
         .comparison-table {
             width: 100%;
-            border-collapse: separate; /* Permite bordas arredondadas e espaçamento */
+            border-collapse: separate;
             border-spacing: 0;
             background: white;
             box-shadow: var(--box-shadow);
-            border-radius: 10px;
+            border-radius: 8px; /* Arredondamento reduzido */
             overflow: hidden;
         }
         .comparison-table th, .comparison-table td {
-            padding: 18px;
+            padding: 14px; /* Padding reduzido */
             text-align: center;
             border-bottom: 1px solid #eee;
             border-right: 1px solid #eee;
+            font-size: 0.95em;
         }
         .comparison-table th {
-            background-color: var(--primary-color);
-            color: white;
-            font-size: 1.1em;
-            vertical-align: middle;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .comparison-table td {
-            font-weight: 500;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .comparison-table td:last-child {
-            border-right: none;
-        }
-        .comparison-table tr:nth-child(even) {
-            background-color: var(--highlight-bg);
+            font-size: 1em; /* Mantido para destaque */
+            letter-spacing: 0.3px;
         }
         .comparison-table .price-cell {
-            color: var(--price-color);
-            font-size: 1.3em;
+            font-size: 1.2em; /* Reduzido */
             font-weight: 700;
         }
         .comparison-table .cta-cell a {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 50px; /* Mais elegante */
-            font-size: 1em;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .comparison-table .cta-cell a:hover {
-            background-color: #b38600;
-            transform: translateY(-1px);
-        }
-        .comparison-table .highlight-row td {
-            background-color: #FFECC4; /* Dourado muito suave */
-            border: 2px solid var(--secondary-color);
+            padding: 8px 16px; /* Padding reduzido */
+            font-size: 0.9em; /* Reduzido */
         }
 
         /* Seções e Estilos de Detalhes */
         .content-section {
-            padding: 40px;
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 10px;
+            padding: 30px; /* Padding reduzido */
+            margin-bottom: 30px; /* Margem reduzida */
+            border-radius: 8px; /* Arredondamento reduzido */
             box-shadow: var(--box-shadow);
-            transition: transform 0.3s ease;
-        }
-        .content-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .section-title {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 12px;
-            margin-bottom: 30px;
-            font-size: 2em;
-            font-weight: 600;
+            font-size: 1.8em; /* Reduzido */
+            padding-bottom: 10px;
+            margin-bottom: 25px; /* Margem reduzida */
         }
         .highlight-box {
-            background-color: var(--highlight-bg);
-            padding: 40px;
-            border-left: 6px solid var(--secondary-color);
-            margin: 50px 0;
-            border-radius: 10px;
+            padding: 30px; /* Padding reduzido */
+            margin: 40px 0; /* Margem reduzida */
+            border-left: 5px solid var(--secondary-color);
+            border-radius: 8px;
         }
         .image-placeholder {
-            text-align: center;
-            margin: 30px 0;
-            padding: 15px;
-            background-color: #eee;
-            border-radius: 8px;
-        }
-        .image-placeholder img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        }
-        .details-list, .included-list {
-            list-style: none;
-            padding: 0;
+            margin: 20px 0; /* Margem reduzida */
         }
         .details-list li, .included-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #f0f0f0;
-            display: flex;
-            align-items: flex-start;
-            font-size: 1.1em;
-        }
-        .details-list li:last-child, .included-list li:last-child {
-            border-bottom: none;
-        }
-        .details-list li::before, .included-list li::before {
-            content: '✓'; /* Trocando o emoji por um caractere elegante */
-            margin-right: 12px;
-            color: var(--success-color);
-            font-size: 1.2em;
-            font-weight: 900;
+            padding: 10px 0; /* Padding reduzido */
+            font-size: 1em; /* Reduzido */
         }
         .pdf-links {
-            margin-top: 40px;
-            padding-top: 30px; 
-            border-top: 1px solid #ccc;
+            margin-top: 30px;
+            padding-top: 20px; 
         }
         .pdf-links h3 {
-            color: var(--primary-color);
-            font-size: 1.7em; 
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .pdf-links .pdf-item {
-            display: flex;
-            align-items: center;
-            text-decoration: none; 
-            color: var(--primary-color); 
-            font-weight: 600; 
-            padding: 10px 0;
-            transition: color 0.2s;
-        }
-        .pdf-links .pdf-item:hover {
-            color: var(--secondary-color);
-        }
-        .pdf-icon {
-            font-size: 1.5em;
-            margin-right: 15px;
+            font-size: 1.5em; /* Reduzido */
+            margin-bottom: 15px;
         }
         .price-box {
-            background: var(--secondary-color);
-            padding: 40px;
-            text-align: center;
-            border-radius: 15px;
-            margin: 50px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            border: 3px solid var(--primary-color);
+            padding: 30px; /* Padding reduzido */
+            border-radius: 12px; /* Arredondamento reduzido */
+            margin: 40px 0; /* Margem reduzida */
         }
         .price-box h3 {
-            color: var(--primary-color);
-            margin-top: 0;
-            font-size: 1.8em;
-            text-transform: uppercase;
+            font-size: 1.5em; /* Reduzido */
         }
         .price-box .price {
-            font-family: 'Georgia', serif; /* Fonte Clássica para Luxo */
-            font-size: 4.5em;
-            color: var(--price-color);
-            font-weight: 900;
-            margin: 10px 0;
-            line-height: 1;
+            font-size: 3.2em; /* MANTIDO e ligeiramente reduzido para garantir que caiba */
+            margin: 0; /* Margem zerada para compactar */
         }
-        .price-box .traditional-price {
-            color: var(--price-color);
-            font-weight: bold;
-            text-decoration: line-through;
-        }
-        .offer-list {
-            list-style-type: none;
-            padding-left: 0;
+        .price-box p {
+            font-size: 1.1em; /* Reduzido */
         }
         .offer-list li {
-            margin-bottom: 18px;
-            font-weight: 500;
-            padding: 18px;
-            background: #ffffff;
-            border-radius: 8px;
-            border-left: 5px solid var(--secondary-color); 
-            line-height: 1.5;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            font-size: 1.1em;
-        }
-        .offer-list li::before {
-            content: '⭐';
-            margin-right: 15px;
-            font-size: 1.1em;
+            margin-bottom: 15px;
+            padding: 15px; /* Padding reduzido */
+            font-size: 1em; /* Reduzido */
         }
         .contact-footer {
-            text-align: center;
-            padding: 50px 0;
-            background: var(--primary-color);
-            color: white;
-            border-radius: 0 0 10px 10px;
-            margin-top: 50px;
+            padding: 40px 0; /* Padding reduzido */
+            margin-top: 40px; /* Margem reduzida */
         }
         .contact-footer h2 {
-            color: white;
-            border-bottom: none;
-            margin-bottom: 30px;
-            font-size: 2em;
+            font-size: 1.8em; /* Reduzido */
         }
         .contact-footer a {
-            display: inline-block;
-            background-color: var(--whatsapp-color);
-            color: white;
-            padding: 18px 40px;
-            margin-top: 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.5em;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-            text-transform: uppercase;
-        }
-        .contact-footer a:hover {
-            background-color: #128C7E;
-            transform: translateY(-3px);
+            padding: 15px 35px; /* Padding reduzido */
+            font-size: 1.4em; /* Reduzido */
         }
 
         /* Estilos da Assistente Virtual Flutuante */
         .assistant-container {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            bottom: 20px;
+            right: 20px;
         }
 
         .assistant-bubble {
-            background-color: var(--secondary-color); 
-            color: var(--primary-color);
-            padding: 15px 20px;
-            border-radius: 20px 20px 0 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 12px;
-            max-width: 280px;
-            font-size: 1em;
-            font-weight: 600;
-            line-height: 1.5;
-            opacity: 0;
-            transform: scale(0.9) translateY(10px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .assistant-bubble.show {
-            opacity: 1;
-            transform: scale(1) translateY(0);
+            padding: 12px 18px; /* Padding reduzido */
+            max-width: 250px; /* Largura reduzida */
+            font-size: 0.95em; /* Reduzido */
         }
 
         .assistant-figure {
-            width: 65px; 
-            height: 65px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            cursor: pointer;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5em; 
-            transition: transform 0.3s;
-            text-decoration: none;
-        }
-
-        .assistant-figure:hover {
-            transform: scale(1.1);
-        }
-
-        /* Estilo para links dentro da lista de inclusos */
-        .included-list a {
-            color: var(--primary-color);
-            text-decoration: underline;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        .included-list a:hover {
-            color: var(--secondary-color);
+            width: 60px; /* Tamanho reduzido */
+            height: 60px; /* Tamanho reduzido */
+            font-size: 2.2em; /* Reduzido */
         }
 
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
             .header-main h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
             }
             .header-main p {
-                font-size: 1em;
+                font-size: 0.9em;
             }
             .content-section {
-                padding: 25px;
+                padding: 20px;
             }
             .section-title {
-                font-size: 1.6em;
+                font-size: 1.5em;
             }
             .price-box .price {
-                font-size: 3.5em;
+                font-size: 2.8em; /* Garante que caiba no mobile */
             }
-            .contact-footer a {
-                font-size: 1.3em;
-                padding: 15px 30px;
-            }
-            /* Força a tabela a ter uma largura mínima para justificar o scroll horizontal */
             .comparison-table {
-                min-width: 800px;
+                min-width: 750px;
             }
         }
     </style>
@@ -448,12 +268,12 @@
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: right; font-size: 0.9em; margin-top: 15px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
+            <p style="text-align: right; font-size: 0.9em; margin-top: 10px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
         </section>
 
         <section class="content-section">
             <h2 class="section-title" id="planta-01">🏡 Planta 01: 5 Quartos, 3 Suítes - 198 m²</h2>
-            <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade, com o maior número de suítes da coleção. Otimizado para o Sistema Monolítico EngeTec.</p>
+            <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade. Otimizado para o Sistema Monolítico EngeTec.</p>
 
             <div class="image-placeholder">
                 <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" width="600">
@@ -486,7 +306,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO EXCLUSIVO (Planta 01 - Monolítico)</h3>
                 <p class="price">R$ 480.000,00</p>
-                <p style="font-size: 1.2em;">
+                <p style="font-size: 1.1em;">
                     Fale com nosso consultor para condições de parcelamento em até **20X SEM JUROS**.
                 </p>
             </div>
@@ -495,7 +315,7 @@
 
         <section class="content-section" style="border: 2px solid var(--secondary-color);">
             <h2 class="section-title" id="planta-02">✨ Planta 02: 4 Quartos, 2 Suítes - 219,64 m² (Maior Área)</h2>
-            <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo. Um projeto de alto design e conforto superior.</p>
+            <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo. Um projeto de alto design.</p>
 
             <div class="image-placeholder">
                 <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" width="600">
@@ -528,7 +348,7 @@
              <div class="price-box">
                 <h3>OFERTA ESPECIAL (Planta 02 - Sistema Monolítico)</h3>
                 <p class="price">R$ 450.000,00</p>
-                <p style="font-size: 1.2em;">
+                <p style="font-size: 1.1em;">
                    
                     Economize **R$ 60.000,00** comparado ao Método Tradicional.<br>
                     (Custo do Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, com prazo de até 15 meses para entrega total).
@@ -537,8 +357,8 @@
         </section>
 
         <section class="content-section">
-          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suíte - 110,99 m²</h2>
-            <p>Projeto unifamiliar Térreo de altíssimo custo-benefício. Ideal para quem prioriza o lazer e a agilidade na entrega sem abrir mão do padrão de luxo.</p>
+          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suítes - 110,99 m²</h2>
+            <p>Projeto unifamiliar Térreo de altíssimo custo-benefício. Ideal para quem prioriza o lazer e a agilidade na entrega.</p>
 
             <div class="image-placeholder">
                 <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" width="600">
@@ -571,7 +391,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
                 <p class="price">R$ 390.000,00</p>
-                <p style="font-size: 1.2em;">
+                <p style="font-size: 1.1em;">
                     Qualidade, agilidade e excelência em um projeto compacto de luxo.
                 </p>
             </div>
@@ -579,7 +399,7 @@
 
         <section class="content-section">
             <h2 class="section-title" id="planta-04">☀️ Planta 04: 3 Quartos, 3 Suítes - 189,92 m²</h2>
-            <p>Projeto de dois pavimentos com foco total em conforto. Todas as 3 suítes garantem máxima privacidade, complementadas por uma ampla área de lazer.</p>
+            <p>Projeto de dois pavimentos com foco total em conforto. Todas as 3 suítes garantem máxima privacidade.</p>
 
             <div class="image-placeholder">
                 <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" width="600">
@@ -612,7 +432,7 @@
             <div class="price-box">
                 <h3>INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
                 <p class="price">R$ 420.000,00</p>
-                <p style="font-size: 1.2em;">
+                <p style="font-size: 1.1em;">
                     O equilíbrio perfeito entre design, conforto e o prazo de entrega reduzido.
                 </p>
             </div>
@@ -631,7 +451,7 @@
 
         <section class="content-section">
             <h2 class="section-title" id="incluso">✅ Pacote "Chave na Mão" com Acabamento Premium</h2>
-            <p>O valor de investimento inclui o projeto <strong>chave na mão</strong> e todos os itens abaixo, garantindo um acabamento de alto padrão, digno de um imóvel de luxo próximo à praia:</p>
+            <p>O valor de investimento inclui o projeto <strong>chave na mão</strong> e todos os itens abaixo:</p>
             <ul class="included-list">
               <li>**Projetos de Engenharia:** Estrutural, de Instalações, Isométricos, Luminotécnico e Lógico.</li>
                 <li>**Execução Completa:** Mão de Obra e materiais de toda a construção e acabamentos.</li>
@@ -658,7 +478,7 @@
                 <li>Contrato assinado diretamente com nossa Acessória Jurídica, garantindo sua segurança.</li>
             </ul>
     
-          <p style="text-align: center; font-style: italic; margin-top: 25px; font-size: 0.95em;">
+          <p style="text-align: center; font-style: italic; margin-top: 20px; font-size: 0.9em;">
                 <strong>*Oferta exclusiva de Novembro de 2025.*</strong><br>
                 O prazo de entrega é contabilizado a partir da assinatura do contrato com nosso setor jurídico.
             </p>
