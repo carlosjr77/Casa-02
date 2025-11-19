@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantas Condomínio Blue Lake - Construção Monolítica - ZAPI SOLUÇÕES</title>
+    <title>Condomínio Blue Lake Luxury - ZAPI SOLUÇÕES</title>
     
     <style>
-        /* Variáveis de Cores (Profissionalismo e Facilidade de Mudança) */
+        /* Variáveis de Cores (LUXO E PRAIA) */
         :root {
-            --primary-color: #004d99; /* Azul Principal (Construtora) */
-            --secondary-color: #ffcc00; /* Amarelo Destaque */
-            --highlight-bg: #e6f7ff; /* Fundo Suave para Destaque */
-            --price-color: #d90000; /* Vermelho para Preço */
-            --success-color: #009900; /* Verde para Vantagens/Check */
-            --whatsapp-color: #25D366; /* Cor do WhatsApp */
-            --text-dark: #333;
-            --bg-light: #f4f4f9;
+            --primary-color: #001F3F; /* Azul Marinho Profundo (Autoridade e Oceano) */
+            --secondary-color: #CC9900; /* Dourado Suave (Luxo) */
+            --text-dark: #3A3A3A; /* Cinza Grafite Escuro */
+            --bg-light: #FAF7F3; /* Branco Creme (Fundo Suave) */
+            --highlight-bg: #F0F5F9; /* Fundo Cinza Azulado Suave */
+            --price-color: #A30000; /* Vermelho Vinho Sóbrio para Preço */
+            --success-color: #00A896; /* Verde-Água Calmo (Natureza e Tranquilidade) */
+            --whatsapp-color: #25D366; 
+            --box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra mais suave */
         }
 
         /* Estilos Base */
         body {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif; /* Fonte mais moderna */
+            line-height: 1.7; /* Maior espaçamento entre linhas */
             margin: 0;
             padding: 0;
             background-color: var(--bg-light);
@@ -30,181 +31,207 @@
         }
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1200px; /* Maior amplitude */
             margin: auto;
-            padding: 20px 0;
+            padding: 30px 0; /* Mais respiro */
         }
 
         /* Header e Título */
         .header-main {
             background: var(--primary-color);
             color: white;
-            padding: 1.5em 0;
+            padding: 2.5em 0;
             text-align: center;
             border-bottom: 5px solid var(--secondary-color);
+            letter-spacing: 2px; /* Sofisticação */
         }
         .header-main h1 {
             margin: 0;
-            font-size: 2.2em;
+            font-size: 2.5em;
             line-height: 1.2;
             text-transform: uppercase;
+            font-weight: 700;
         }
         .header-main p {
-            margin-top: 5px;
-            font-size: 1.1em;
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.9;
         }
         
-        /* Tabela Responsiva (Nova Adição) */
+        /* Tabela Responsiva */
         .table-responsive {
-            overflow-x: auto; /* Adiciona scroll horizontal se necessário */
-            -webkit-overflow-scrolling: touch; 
-            margin: 20px 0;
+            overflow-x: auto; 
+            margin: 30px 0;
         }
 
         /* Tabela de Comparação */
         .comparison-table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate; /* Permite bordas arredondadas e espaçamento */
+            border-spacing: 0;
             background: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: var(--box-shadow);
+            border-radius: 10px;
             overflow: hidden;
         }
         .comparison-table th, .comparison-table td {
-            padding: 15px;
+            padding: 18px;
             text-align: center;
-            border: 1px solid #ddd;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
         }
         .comparison-table th {
             background-color: var(--primary-color);
             color: white;
             font-size: 1.1em;
-            vertical-align: top; /* Alinha o texto do cabeçalho */
+            vertical-align: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         .comparison-table td {
-            font-weight: bold;
+            font-weight: 500;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table td:last-child {
+            border-right: none;
         }
         .comparison-table tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: var(--highlight-bg);
         }
         .comparison-table .price-cell {
             color: var(--price-color);
-            font-size: 1.2em;
+            font-size: 1.3em;
+            font-weight: 700;
         }
         .comparison-table .cta-cell a {
             background-color: var(--secondary-color);
-            color: var(--text-dark);
-            padding: 8px 15px;
+            color: var(--primary-color);
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 0.9em;
-            transition: background-color 0.2s;
+            border-radius: 50px; /* Mais elegante */
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
         }
         .comparison-table .cta-cell a:hover {
-            background-color: #ffb800;
+            background-color: #b38600;
+            transform: translateY(-1px);
         }
         .comparison-table .highlight-row td {
-            background-color: var(--highlight-bg);
-            border: 2px solid var(--primary-color);
+            background-color: #FFECC4; /* Dourado muito suave */
+            border: 2px solid var(--secondary-color);
         }
 
         /* Seções e Estilos de Detalhes */
         .content-section {
-            padding: 25px;
-            margin-bottom: 30px;
+            padding: 40px;
+            margin-bottom: 40px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
             transition: transform 0.3s ease;
         }
         .content-section:hover {
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .section-title {
             color: var(--primary-color);
-            border-bottom: 3px solid var(--secondary-color);
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            font-size: 1.7em;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
         }
         .highlight-box {
             background-color: var(--highlight-bg);
-            padding: 30px;
-            border-left: 6px solid var(--primary-color);
-            margin: 40px 0;
-            border-radius: 8px;
+            padding: 40px;
+            border-left: 6px solid var(--secondary-color);
+            margin: 50px 0;
+            border-radius: 10px;
         }
         .image-placeholder {
             text-align: center;
-            margin: 20px 0;
-            padding: 10px;
+            margin: 30px 0;
+            padding: 15px;
             background-color: #eee;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         .image-placeholder img {
             max-width: 100%;
             height: auto;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
         }
         .details-list, .included-list {
             list-style: none;
             padding: 0;
         }
         .details-list li, .included-list li {
-            padding: 10px 0;
-            border-bottom: 1px dashed #ccc;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
             display: flex;
-            align-items: center;
-            font-size: 1em;
-        }
-        .details-list li::before, .included-list li::before {
-            content: '✅';
-            margin-right: 10px;
-            color: var(--success-color);
+            align-items: flex-start;
             font-size: 1.1em;
         }
+        .details-list li:last-child, .included-list li:last-child {
+            border-bottom: none;
+        }
+        .details-list li::before, .included-list li::before {
+            content: '✓'; /* Trocando o emoji por um caractere elegante */
+            margin-right: 12px;
+            color: var(--success-color);
+            font-size: 1.2em;
+            font-weight: 900;
+        }
         .pdf-links {
-            margin-top: 30px;
-            padding-top: 20px; 
+            margin-top: 40px;
+            padding-top: 30px; 
             border-top: 1px solid #ccc;
         }
         .pdf-links h3 {
             color: var(--primary-color);
-            font-size: 1.5em; 
-            margin-bottom: 15px;
+            font-size: 1.7em; 
+            margin-bottom: 20px;
+            font-weight: 600;
         }
         .pdf-links .pdf-item {
-            display: block;
+            display: flex;
+            align-items: center;
             text-decoration: none; 
             color: var(--primary-color); 
-            font-weight: bold; 
-            padding: 8px 0;
+            font-weight: 600; 
+            padding: 10px 0;
             transition: color 0.2s;
         }
         .pdf-links .pdf-item:hover {
-            color: var(--price-color);
+            color: var(--secondary-color);
         }
         .pdf-icon {
-            font-size: 1.2em;
-            margin-right: 10px;
+            font-size: 1.5em;
+            margin-right: 15px;
         }
         .price-box {
             background: var(--secondary-color);
-            padding: 35px;
+            padding: 40px;
             text-align: center;
-            border-radius: 12px;
-            margin: 40px 0;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             border: 3px solid var(--primary-color);
         }
         .price-box h3 {
-            color: var(--text-dark);
+            color: var(--primary-color);
             margin-top: 0;
-            font-size: 1.6em;
+            font-size: 1.8em;
+            text-transform: uppercase;
         }
         .price-box .price {
-            font-size: 4em;
+            font-family: 'Georgia', serif; /* Fonte Clássica para Luxo */
+            font-size: 4.5em;
             color: var(--price-color);
             font-weight: 900;
             margin: 10px 0;
@@ -213,125 +240,147 @@
         .price-box .traditional-price {
             color: var(--price-color);
             font-weight: bold;
+            text-decoration: line-through;
         }
         .offer-list {
             list-style-type: none;
             padding-left: 0;
         }
         .offer-list li {
-            margin-bottom: 15px;
-            font-weight: bold;
-            padding: 15px;
-            background: #f0f0f5;
-            border-radius: 5px;
-            border-left: 5px solid var(--success-color); 
-            line-height: 1.4;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 18px;
+            font-weight: 500;
+            padding: 18px;
+            background: #ffffff;
+            border-radius: 8px;
+            border-left: 5px solid var(--secondary-color); 
+            line-height: 1.5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            font-size: 1.1em;
         }
         .offer-list li::before {
-            content: '💡';
-            margin-right: 10px;
+            content: '⭐';
+            margin-right: 15px;
+            font-size: 1.1em;
         }
         .contact-footer {
             text-align: center;
-            padding: 40px 0;
+            padding: 50px 0;
             background: var(--primary-color);
             color: white;
-            border-radius: 0 0 8px 8px;
-            margin-top: 40px;
+            border-radius: 0 0 10px 10px;
+            margin-top: 50px;
         }
         .contact-footer h2 {
             color: white;
             border-bottom: none;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2em;
         }
         .contact-footer a {
             display: inline-block;
             background-color: var(--whatsapp-color);
             color: white;
-            padding: 15px 35px;
-            margin-top: 20px;
+            padding: 18px 40px;
+            margin-top: 25px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.4em;
+            font-size: 1.5em;
             transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            text-transform: uppercase;
         }
         .contact-footer a:hover {
             background-color: #128C7E;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
-        /* Estilos da Assistente Virtual Flutuante (NOVO) */
+        /* Estilos da Assistente Virtual Flutuante */
         .assistant-container {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000; /* Garante que fique acima de outros elementos */
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
         }
 
         .assistant-bubble {
-            background-color: var(--secondary-color); /* Amarelo Destaque */
-            color: var(--text-dark);
-            padding: 12px 15px;
-            border-radius: 15px 15px 0 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 10px;
-            max-width: 250px;
-            font-size: 0.9em;
-            font-weight: bold;
-            line-height: 1.4;
-            opacity: 0; /* Começa invisível para aparecer com JS */
-            transform: translateY(10px);
+            background-color: var(--secondary-color); 
+            color: var(--primary-color);
+            padding: 15px 20px;
+            border-radius: 20px 20px 0 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 12px;
+            max-width: 280px;
+            font-size: 1em;
+            font-weight: 600;
+            line-height: 1.5;
+            opacity: 0;
+            transform: scale(0.9) translateY(10px);
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
         .assistant-bubble.show {
             opacity: 1;
-            transform: translateY(0);
+            transform: scale(1) translateY(0);
         }
 
         .assistant-figure {
-            width: 60px; /* Tamanho da figura */
-            height: 60px;
+            width: 65px; 
+            height: 65px;
             border-radius: 50%;
             background-color: var(--primary-color);
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.2em; /* Tamanho do emoji/ícone */
-            transition: transform 0.2s;
-            text-decoration: none; /* Remove sublinhado do link */
+            font-size: 2.5em; 
+            transition: transform 0.3s;
+            text-decoration: none;
         }
 
         .assistant-figure:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
-        /* RESPONSIVIDADE (Aprimorada para Mobile) */
+        /* Estilo para links dentro da lista de inclusos */
+        .included-list a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .included-list a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* RESPONSIVIDADE */
         @media (max-width: 768px) {
             .header-main h1 {
-                font-size: 1.6em;
+                font-size: 1.8em;
+            }
+            .header-main p {
+                font-size: 1em;
+            }
+            .content-section {
+                padding: 25px;
             }
             .section-title {
-                font-size: 1.5em;
+                font-size: 1.6em;
             }
             .price-box .price {
-                font-size: 3em;
+                font-size: 3.5em;
             }
             .contact-footer a {
-                font-size: 1.2em;
-                padding: 15px 25px;
+                font-size: 1.3em;
+                padding: 15px 30px;
             }
             /* Força a tabela a ter uma largura mínima para justificar o scroll horizontal */
             .comparison-table {
-                min-width: 750px; /* Aumentado para acomodar a nova coluna */
+                min-width: 800px;
             }
         }
     </style>
@@ -340,28 +389,26 @@
 
     <header class="header-main">
         <div class="container">
-            <h1>CONDOMÍNIO BLUE LAKE - CATÁLOGO DE PLANTAS DISPONÍVEIS</h1>
-            <p>Conheça às opções de Plantas já aprovadas no Sistema Monolítico de Alta Performance da <strong>EngeTec</strong> em Parceria com a <strong>ZAPI SOLUÇÕES</strong>.</p>
+            <h1>BLUE LAKE RESIDENCE CLUB</h1>
+            <p>Construção Monolítica de Alto Padrão - A Exclusividade Próxima ao Mar</p>
         </div>
     </header>
 
     <div class="container">
     
         <section class="content-section">
-            <h2 class="section-title">📊 Comparativo Rápido das Plantas</h2>
+            <h2 class="section-title">📊 Plantas Exclusivas e Comparativo de Investimento</h2>
             
             <div class="table-responsive">
                 <table class="comparison-table">
                     <thead>
                         <tr>
-                         
                             <th>Planta</th>
                             <th>Quartos</th>
                             <th>Área Total</th>
-                            <th>Valor (Monolítico)<br>(Entrega em 12 meses)</th>
-                            <th>Valor (Convencional)<br>(Entrega em 15 meses)</th>
-                           
-                            <th>Ver Detalhes</th>
+                            <th>Investimento (Monolítico)<br>(Entrega em 12 meses)</th>
+                            <th>Custo Estimado (Convencional)<br>(Entrega em 15 meses)</th>
+                            <th>Ver Projeto</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -371,7 +418,7 @@
                             <td>198 m²</td>
                             <td class="price-cell">R$ 480.000,00*</td>
                             <td class="price-cell">R$ 530.000,00*</td> 
-                            <td class="cta-cell"><a href="#planta-01">Ir para Planta 01</a></td>
+                            <td class="cta-cell"><a href="#planta-01">Detalhes</a></td>
                         </tr>
                         <tr class="highlight-row">
                             <td><strong>Planta 02 (Destaque)</strong></td>
@@ -380,286 +427,253 @@
                             <td>219,64 m²</td>
                             <td class="price-cell">R$ 450.000,00*</td>
                             <td class="price-cell">R$ 510.000,00*</td> 
-                            <td class="cta-cell"><a href="#planta-02">Ir para Planta 02</a></td>
-                    
+                            <td class="cta-cell"><a href="#planta-02">Detalhes</a></td>
                         </tr>
                         <tr>
                             <td><strong>Planta 03</strong></td>
                             <td>3 Quartos, sendo 1 Suíte</td>
-                          
                             <td>110,99 m²</td>
                             <td class="price-cell">R$ 390.000,00*</td>
                             <td class="price-cell">R$ 440.000,00*</td> 
-                            <td class="cta-cell"><a href="#planta-03">Ir para Planta 03</a></td>
+                            <td class="cta-cell"><a href="#planta-03">Detalhes</a></td>
                         </tr>
                         <tr>
-      
                             <td><strong>Planta 04</strong></td>
                             <td>3 Quartos, sendo 3 Suítes</td>
                             <td>189,92 m²</td>
-                           
                             <td class="price-cell">R$ 420.000,00*</td>
                             <td class="price-cell">R$ 470.000,00*</td>
-                            <td class="cta-cell"><a href="#planta-04">Ir para Planta 04</a></td>
+                            <td class="cta-cell"><a href="#planta-04">Detalhes</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p style="text-align: right; font-size: 0.9em; margin-top: -15px;">*Os valores são estimativas e devem ser confirmados em contrato.</p>
+            <p style="text-align: right; font-size: 0.9em; margin-top: 15px; font-style: italic;">*Os valores são estimativas e devem ser confirmados em contrato. (Chave na Mão, acabamento de luxo).</p>
         </section>
 
         <section class="content-section">
-            <h2 class="section-title" id="planta-01">🏡 Planta 01: 5 Quartos, 3 Suítes</h2>
-            <p>Projeto de residência unifamiliar no Condomínio Blue Lake. É a casa com o maior número de suítes, ideal para famílias grandes.</p>
+            <h2 class="section-title" id="planta-01">🏡 Planta 01: 5 Quartos, 3 Suítes - 198 m²</h2>
+            <p>Projeto amplo, desenhado para famílias que valorizam o conforto e a privacidade, com o maior número de suítes da coleção. Otimizado para o Sistema Monolítico EngeTec.</p>
 
             <div class="image-placeholder">
-      
                 <img src="planta-01-colorida.png" alt="Planta Baixa Colorida Planta 01" width="600">
-                <p><strong>[Imagem da Planta Baixa TÉRREO e 1º PISO - Render Colorido Casa Tipo 01]</strong></p>
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 01]</strong></p>
             </div>
 
             <ul class="details-list">
                 <li><strong>Área Total Construída:</strong> 198 m² (Térreo: 113 m² | 1º Piso: 85 m²).</li>
- 
                 <li><strong>Layout:</strong> 5 Quartos, sendo 3 Suítes.</li>
-                <li><strong>Principais Ambientes Térreo:</strong> Sala de Estar (27 m²), Sala de Jantar (15 m²), Cozinha (11 m²).</li>
-                <li><strong>Lazer Completo:</strong> Piscina (16 m²), Sauna (3 m²), Deck (20 m²), Churrasqueira (4 m²).</li>
+                <li><strong>Lazer Privativo:</strong> Piscina (16 m²), Sauna (3 m²), Deck (20 m²), Churrasqueira (4 m²).</li>
+                <li><strong>Ambientes de Convívio:</strong> Sala de Estar (27 m²), Sala de Jantar (15 m²), Cozinha Gourmet (11 m²).</li>
             </ul>
         
-     
             <div class="pdf-links">
-                <h3>📥 Documentação Técnica para Download - Planta 01</h3>
+                <h3>📥 Documentação Técnica</h3>
                 <ul class="details-list" style="list-style: none; padding-left: 0;">
                     <li>
-                        <a href="BLK - CASA 01 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
-                            <span class="pdf-icon">📄</span> Planta Baixa Térreo e 1º Piso (PDF)
+                        <a href="BLK - CASA 01 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
+                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
                         </a>
                     </li>
-                   
                     <li>
-                        <a href="BLK - CASA 01 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
+                        <a href="BLK - CASA 01 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
                             <span class="pdf-icon">📐</span> Fachada Principal e Cortes Transversais (PDF)
                         </a>
                     </li>
                 </ul>
-    
             </div>
 
             <div class="price-box">
-                <h3>VALOR DE INVESTIMENTO (Planta 01 - Sistema Monolítico)</h3>
+                <h3>INVESTIMENTO EXCLUSIVO (Planta 01 - Monolítico)</h3>
                 <p class="price">R$ 480.000,00</p>
-                <p style="font-size: 1.1em;">
-                    
-                    Peça um orçamento detalhado no WhatsApp para condições de parcelamento em até **20X S/ JUROS**.
+                <p style="font-size: 1.2em;">
+                    Fale com nosso consultor para condições de parcelamento em até **20X SEM JUROS**.
                 </p>
             </div>
         </section>
 
 
-        <section class="content-section" style="border: 2px solid var(--primary-color);">
-            <h2 class="section-title" id="planta-02">✨ Planta 02: 4 Quartos, 2 Suítes (Destaque!)</h2>
-            <p>Projeto de construção de residência unifamiliar 
- situada no Condomínio Blue Lake Residence Club.</p>
+        <section class="content-section" style="border: 2px solid var(--secondary-color);">
+            <h2 class="section-title" id="planta-02">✨ Planta 02: 4 Quartos, 2 Suítes - 219,64 m² (Maior Área)</h2>
+            <p>A maior planta em área total construída, com espaços de convivência generosos e um home club particular no térreo. Um projeto de alto design e conforto superior.</p>
 
             <div class="image-placeholder">
                 <img src="planta-colorida.png" alt="Planta Baixa Colorida Planta 02" width="600">
-                <p><strong>[Imagem da Planta Baixa TÉRREO e 1º PISO - Render Colorido Casa Tipo 02]</strong></p>
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 02]</strong></p>
             </div>
 
             <ul class="details-list">
-    
-              <li><strong>Área Total Construída:</strong> 219,64 m² (Térreo: 115,83 m² | 1º Piso: 102,81 m²).</li>
-                <li><strong>Layout:</strong> 4 Quartos, sendo 2 Suítes.</li>
-                <li><strong>Principais Ambientes Térreo:</strong> Sala de Estar (34,43 m²), Cozinha (17,04 m²), Garagem (32,11 m²), Serviço (7,00 m²).</li>
-                <li><strong>Lazer Térreo:</strong> Piscina (24,15 m²), Churrasqueira (14,05 m²), Sauna (4,72 m²), Varanda (17,29 m²).</li>
+                <li><strong>Área Total Construída:</strong> 219,64 m² (Térreo: 115,83 m² | 1º Piso: 102,81 m²).</li>
+                <li><strong>Layout:</strong> 4 Quartos, sendo 2 Suítes e uma master com varanda.</li>
+                <li><strong>Lazer Superior:</strong> Piscina (24,15 m²), Churrasqueira (14,05 m²), Sauna (4,72 m²).</li>
+                <li><strong>Ambientes Amplos:</strong> Sala de Estar (34,43 m²), Cozinha (17,04 m²), Garagem para 2 carros (32,11 m²).</li>
             </ul>
    
-           
             <div class="pdf-links">
-                <h3>📥 Documentação Técnica para Download - Planta 02</h3>
+                <h3>📥 Documentação Técnica</h3>
                 <ul class="details-list" style="list-style: none; padding-left: 0;">
                     <li>
-              
-                      <a href="planta-baixa.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
-                            <span class="pdf-icon">📄</span> Planta Baixa Térreo e 1º Piso (PDF)
+                      <a href="planta-baixa.pdf" target="_blank" class="pdf-item">
+                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
                         </a>
                     </li>
-   
-                  <li>
-                        <a href="fachadas-cortes.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
+                    <li>
+                        <a href="fachadas-cortes.pdf" target="_blank" class="pdf-item">
                             <span class="pdf-icon">📐</span> Fachada Principal e Cortes Transversais (PDF)
                         </a>
                     </li>
                 </ul>
-    
             </div>
+            
              <div class="price-box">
-                <h3>VALOR DE INVESTIMENTO (Planta 02 - Sistema Monolítico)</h3>
+                <h3>OFERTA ESPECIAL (Planta 02 - Sistema Monolítico)</h3>
                 <p class="price">R$ 450.000,00</p>
-                <p style="font-size: 1.1em;">
+                <p style="font-size: 1.2em;">
                    
-                    Economia de <strong>R$ 60.000,00</strong> comparado ao Método Tradicional.<br>
-                    (Construção no Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, podendo ser parcelado em até **20X S/ JUROS**, com prazo de até 15 meses para entrega total).
+                    Economize **R$ 60.000,00** comparado ao Método Tradicional.<br>
+                    (Custo do Método Tradicional: <span class="traditional-price">R$ 510.000,00</span>, com prazo de até 15 meses para entrega total).
                 </p>
             </div>
         </section>
 
         <section class="content-section">
-      
-          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suíte</h2>
-            <p>Projeto unifamiliar compacto e eficiente. Ideal para quem busca uma construção com ótimo custo-benefício e excelente área de lazer em um único piso.</p>
+          <h2 class="section-title" id="planta-03">🍃 Planta 03: 3 Quartos, 1 Suíte - 110,99 m²</h2>
+            <p>Projeto unifamiliar Térreo de altíssimo custo-benefício. Ideal para quem prioriza o lazer e a agilidade na entrega sem abrir mão do padrão de luxo.</p>
 
             <div class="image-placeholder">
                 <img src="planta-03-colorida.png" alt="Planta Baixa Colorida Planta 03" width="600">
-                
-                <p><strong>[Imagem da Planta Baixa TÉRREO - Render Colorido Casa Tipo 03]</strong></p>
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO - Casa Tipo 03]</strong></p>
             </div>
 
             <ul class="details-list">
                 <li><strong>Área Total Construída:</strong> 110,99 m² (Térreo).</li>
                 <li><strong>Layout:</strong> 3 Quartos, sendo 1 Suíte.</li>
-                <li><strong>Principais Ambientes:</strong> Sala de Estar (15,01 m²), 
- Sala de Jantar (15,60 m²), Cozinha (5,72 m²), Garagem (15,59 m²).</li>
-                <li><strong>Lazer:</strong> Piscina (17,56 m²), Churrasqueira (5,09 m²), Deck (23,21 m²).</li>
+                <li><strong>Lazer no Térreo:</strong> Piscina (17,56 m²), Churrasqueira (5,09 m²), Deck (23,21 m²).</li>
+                <li><strong>Área Social:</strong> Salas de Estar (15,01 m²) e Jantar (15,60 m²) integradas.</li>
             </ul>
             
             <div class="pdf-links">
-                <h3>📥 Documentação Técnica para Download - Planta 03</h3>
-     
+                <h3>📥 Documentação Técnica</h3>
              <ul class="details-list" style="list-style: none; padding-left: 0;">
                     <li>
-                        <a href="BLK - CASA 03 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
-                            <span class="pdf-icon">📄</span> Planta Baixa Térreo (PDF)
+                        <a href="BLK - CASA 03 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
+                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo (PDF)
                         </a>
                     </li>
                     <li>
-  
-                        <a href="BLK - CASA 03 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
+                        <a href="BLK - CASA 03 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
                             <span class="pdf-icon">📐</span> Fachada Principal e Cortes (PDF)
                         </a>
                     </li>
                 </ul>
-     
             </div>
 
             <div class="price-box">
-                <h3>VALOR DE INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
+                <h3>INVESTIMENTO (Planta 03 - Sistema Monolítico)</h3>
                 <p class="price">R$ 390.000,00</p>
-                <p style="font-size: 1.1em;">
-                    Ótimo 
- custo-benefício com a qualidade e agilidade do Sistema Monolítico.
+                <p style="font-size: 1.2em;">
+                    Qualidade, agilidade e excelência em um projeto compacto de luxo.
                 </p>
             </div>
         </section>
 
         <section class="content-section">
-            <h2 class="section-title" id="planta-04">☀️ Planta 04: 3 Quartos, 3 Suítes</h2>
-            <p>Um projeto elegante de dois pavimentos com foco em suítes e área de lazer completa. 
- Possui 3 Suítes no total.</p>
+            <h2 class="section-title" id="planta-04">☀️ Planta 04: 3 Quartos, 3 Suítes - 189,92 m²</h2>
+            <p>Projeto de dois pavimentos com foco total em conforto. Todas as 3 suítes garantem máxima privacidade, complementadas por uma ampla área de lazer.</p>
 
             <div class="image-placeholder">
                 <img src="planta-04-colorida.png" alt="Planta Baixa Colorida Planta 04" width="600">
-                <p><strong>[Imagem da Planta Baixa TÉRREO e 1º PISO - Render Colorido Casa Tipo 04]</strong></p>
+                <p><strong>[Render 3D Ilustrativo da Planta Baixa TÉRREO e 1º PISO - Casa Tipo 04]</strong></p>
             </div>
 
             <ul class="details-list">
-      
               <li><strong>Área Total Construída:</strong> 189,92 m² (Térreo: 108,55 m² | 1º Piso: 81,37 m²).</li>
-                <li><strong>Layout:</strong> 3 Quartos, sendo 3 Suítes.</li>
-                <li><strong>Principais Ambientes:</strong> Sala de Estar (17.76 m²), Sala de Jantar (14.28 m²), Cozinha (11,75 m²), Garagem (17,00 m²).</li>
-                <li><strong>Lazer Térreo:</strong> Piscina (25.06 m²), Churrasqueira (12.94 m²), Deck Descoberto (30,50 m²).</li>
+                <li><strong>Layout:</strong> 3 Quartos, sendo 3 Suítes privativas.</li>
+                <li><strong>Lazer Total:</strong> Piscina (25.06 m²), Churrasqueira (12.94 m²), Deck Descoberto (30,50 m²).</li>
+                <li><strong>Área Social:</strong> Salas de Estar e Jantar integradas com 32 m².</li>
             </ul>
     
-          
             <div class="pdf-links">
-                <h3>📥 Documentação Técnica para Download - Planta 04</h3>
+                <h3>📥 Documentação Técnica</h3>
                 <ul class="details-list" style="list-style: none; padding-left: 0;">
                     <li>
-               
-             <a href="BLK - CASA 04 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
-                            <span class="pdf-icon">📄</span> Planta Baixa Térreo e 1º Piso (PDF)
+             <a href="BLK - CASA 04 - PLANTA BAIXA.pdf" target="_blank" class="pdf-item">
+                            <span class="pdf-icon">🗂️</span> Planta Baixa Térreo e 1º Piso (PDF)
                         </a>
                     </li>
                     <li>
-                        <a href="BLK - CASA 04 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item" style="display: flex; align-items: center;">
+                        <a href="BLK - CASA 04 - FACHADA, CORTE E TELHADO.pdf" target="_blank" class="pdf-item">
                             <span class="pdf-icon">📐</span> Fachada Principal e Cortes (PDF)
                         </a>
                     </li>
                 </ul>
-     
             </div>
 
             <div class="price-box">
-                <h3>VALOR DE INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
+                <h3>INVESTIMENTO (Planta 04 - Sistema Monolítico)</h3>
                 <p class="price">R$ 420.000,00</p>
-                <p style="font-size: 1.1em;">
-                    Alto 
- padrão de lazer com a velocidade e eficiência do sistema construtivo.
+                <p style="font-size: 1.2em;">
+                    O equilíbrio perfeito entre design, conforto e o prazo de entrega reduzido.
                 </p>
             </div>
         </section>
 
         <section class="content-section highlight-box">
-            <h2 class="section-title" id="sistema">🚀 Nosso Sistema Monolítico: Vantagem, Tecnologia e Qualidade</h2>
-            <p>Construa com a <strong>EngeTec e a ZAPI SOLUÇÕES</strong> e garanta a 
- melhor tecnologia para sua Casa.</p>
+            <h2 class="section-title" id="sistema">💎 Tecnologia Monolítica ZAPI: O Padrão de Luxo em Construção</h2>
+            <p>A exclusividade de morar bem, com a segurança, o isolamento e a velocidade do Sistema Monolítico de Alta Performance.</p>
             
             <ul class="included-list">
-                <li><strong>EPS de Alta Densidade</strong>: Máximo isolamento térmico e acústico.</li>
-                <li><strong>Malha de Aço em CA-70 Galvanizado</strong>: Produção exclusiva da GERDAU para ZAPI SOLUÇÕES.</li>
-                <li><strong>Tempo de Obra</strong>: 
- Sua obra totalmente entregue em **12 meses** (Prazo para o Método Monolítico).</li>
+                <li>**EPS de Alta Densidade:** Máximo conforto térmico e acústico, essencial no clima litorâneo.</li>
+                <li>**Estrutura Aço/Concreto:** Malha de Aço em CA-70 Galvanizado, tecnologia GERDAU exclusiva para ZAPI SOLUÇÕES.</li>
+                <li>**Entrega Garantida:** Sua residência de luxo totalmente entregue em apenas **12 meses**.</li>
             </ul>
         </section>
 
         <section class="content-section">
-            <h2 class="section-title" id="incluso">✅ Obras Entregues com TUDO Incluso!</h2>
-            <p>O valor de investimento é pelo projeto <strong>chave na mão</strong> com acabamento de alto padrão, incluindo:</p>
+            <h2 class="section-title" id="incluso">✅ Pacote "Chave na Mão" com Acabamento Premium</h2>
+            <p>O valor de investimento inclui o projeto <strong>chave na mão</strong> e todos os itens abaixo, garantindo um acabamento de alto padrão, digno de um imóvel de luxo próximo à praia:</p>
             <ul class="included-list">
-     
-              <li><strong>Projetos Completos:</strong> Estrutural, de Instalações, Isométricos e Luminotécnico.</li>
-                <li><strong>Execução:</strong> Mão de Obra de toda a construção e acabamentos.</li>
-                <li><strong>Lazer Completo:</strong> Piscina, Sauna à Vapor, Churrasqueira.</li>
-                <li><strong>Acabamentos Premium:</strong> Granitos, Blindex, Esquadrias Linha GOLD e Revestimentos PORTO BELO (até R$ 80,00/m²).</li>
-      
-              <li><strong>Infraestrutura:</strong> Instalação Elétrica, Rede Estruturada, Previsão para Geração de Energia Fotovoltaica (Solar) e Previsão para Gerador de até 35KVA.</li>
-                <li><strong>Hidráulica:</strong> Instalações Hidráulicas e Hidrosanitário com Projetos Isométricos de cada ambiente e Metais.</li>
-                <li><strong>Design Interno:</strong> Pintura Total e Rebaixamentos em Drywall.</li>
-                <li><strong>Iluminação:</strong> Com nossa empresa parceira 
- Ilumina Iluminação.</li>
+              <li>**Projetos de Engenharia:** Estrutural, de Instalações, Isométricos, Luminotécnico e Lógico.</li>
+                <li>**Execução Completa:** Mão de Obra e materiais de toda a construção e acabamentos.</li>
+                <li>**Lazer Completo:** Piscina com infraestrutura, Sauna à Vapor e Área Gourmet com Churrasqueira.</li>
+                <li>
+                    **Acabamentos Premium:** Granitos nobres, Blindex, Esquadrias Linha GOLD e Revestimentos 
+                    <a href="https://www.portobello.com.br/revestimentos?channel=portobello-shop" target="_blank">PORTOBELLO</a> 
+                    (até R$ 80,00/m²).
+                </li>
+              <li>**Sustentabilidade:** Previsão para Geração de Energia Fotovoltaica (Solar) e Previsão para Gerador de até 35KVA.</li>
+                <li>**Instalações:** Hidráulica e Hidrosanitário com Projetos Isométricos e Metais de design.</li>
+                <li>**Design Interno:** Pintura Total em Suvinil Toque de Seda e Rebaixamentos em Drywall elegantes.</li>
+                <li>**Iluminação de Destaque:** Projeto e execução em parceria com a Ilumina Iluminação.</li>
             </ul>
         </section>
 
         <section class="content-section">
-            <h2 class="section-title" id="condicoes">💰 Condições de Pagamento e Vantagens Exclusivas</h2>
+            <h2 class="section-title" id="condicoes">💰 Condições Exclusivas de Investimento</h2>
             <ul class="offer-list">
-                <li><strong>Forma de Pagamento:</strong> Podendo ser parcelado em até **20X S/ JUROS** diretamente conosco.</li>
-           
-                <li><strong>NÃO SOLICITAMOS VALORES DE ENTRADA.</strong></li>
-                <li><strong>SEU ORÇAMENTO VÁLIDO DO INÍCIO AO FIM, SEM ADITIVOS DE OBRA.</strong></li>
-                <li><strong>TODA a Legalização por Nossa Conta:</strong> Projetos Complementares, Licenciamento Ambiental e Habite-se.</li>
-                <li>Contrato assinado diretamente com nossa Acessória Jurídica.</li>
+                <li>**Máxima Flexibilidade:** Parcelamento em até **20X SEM JUROS** diretamente com a construtora.</li>
+                <li>**Fluxo Favorável:** **NÃO** solicitamos valores de entrada.</li>
+                <li>**Compromisso e Transparência:** **SEU ORÇAMENTO É VÁLIDO DO INÍCIO AO FIM, SEM ADITIVOS DE OBRA.**</li>
+                <li>**Zero Burocracia:** Assumimos **TODA a Legalização** (Projetos Complementares, Licenciamento Ambiental e Habite-se).</li>
+                <li>Contrato assinado diretamente com nossa Acessória Jurídica, garantindo sua segurança.</li>
             </ul>
     
-          <p style="text-align: center; font-style: italic; margin-top: 20px;">
-                <strong>*Promoção de Novembro de 2025.*</strong><br>
-                A data de entrega começa à ser contada à partir da assinatura do contrato com nosso setor jurídico.
+          <p style="text-align: center; font-style: italic; margin-top: 25px; font-size: 0.95em;">
+                <strong>*Oferta exclusiva de Novembro de 2025.*</strong><br>
+                O prazo de entrega é contabilizado a partir da assinatura do contrato com nosso setor jurídico.
             </p>
         </section>
 
         <footer class="contact-footer">
-            <h2>Quer saber mais? Fale Conosco Agora!</h2>
-            <p>Para aqueles que tenham dúvidas <strong>sobre nosso sistema Monolítico</strong>, será um prazer recebê-los em nossa fábrica na região Serrana do Rio, na cidade de Três Rios (30 minutos depois de Itaipava/Petrópolis).</p>
-            <p>Lá poderemos apresentar, entre outros, nossos projetos em andamento e fazer uma visita em algumas de nossas obras.</p>
-            <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x.">CLIQUE AQUI E CHAME NO WHATSAPP PRIVADO</a>
+            <h2>Pronto para Viver o Luxo Próximo ao Mar?</h2>
+            <p>Agende uma visita à nossa fábrica em Três Rios/RJ para conhecer a tecnologia Monolítica em ação e veja nossos projetos em andamento.</p>
+            <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." target="_blank">FALE AGORA COM NOSSO CONSULTOR EXCLUSIVO</a>
         </footer>
-  
-      
     </div>
 
     <div class="assistant-container">
         <div class="assistant-bubble" id="assistant-bubble">
-            👋 Olá! Sou sua assistente. Precisa de ajuda para **comparar as casas** ou tirar dúvidas sobre Monolítico?
+            👋 Olá! Sou sua assistente. Precisa de ajuda para **comparar as casas** ou tirar dúvidas sobre o Sistema Monolítico de Luxo?
         </div>
         
         <a href="https://wa.me/5521965125138?text=Ol%C3%A1%2C%20vi%20o%20site%20das%20Plantas%20do%20Blue%20Lake%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20condi%C3%A7%C3%B5es%20de%20pagamento%20em%2020x." 
